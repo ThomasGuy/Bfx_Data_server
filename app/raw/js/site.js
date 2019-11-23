@@ -10,13 +10,15 @@ window.onload = () => {
       window.scrollBy({
         top: -navOffset, // could be negative value
         left: 0,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   }
 
-  elems.forEach(el => el.addEventListener("click", getHref));
+  elems.forEach((el) => el.addEventListener("click", getHref));
 
   // We can set a scss variable like this ????
   document.documentElement.style.setProperty("$fixed-top-offset", navOffset);
+
+  console.log(navOffset);
 };

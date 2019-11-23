@@ -1,7 +1,8 @@
 // ----------  Welcome  -------------
 
 .bg-mysite-welcome {
-  background-image: url("../img/banner.jpg");
+  background-image: url("../img/skyline.png");
   background-size: cover;
   color: $bg-dark;
+  min-height: 400px;
 }

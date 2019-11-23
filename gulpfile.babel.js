@@ -17,52 +17,56 @@ import babelify from "babelify";
 import bro from "gulp-bro";
 import rename from "gulp-rename";
 import buffer from "vinyl-buffer";
+import cache from "gulp-cache";
+
+// import { exec } from "child_process";
 
 sass.compiler = require("node-sass");
 
 const PROD = process.env.NODE_ENV === "production";
-const buildDir = PROD ? "build" : "dist";
-const server = browserSync.create();
-const clean = () => del(["dist/**/*", "build/**/*"]);
-
+const buildDir = PROD ? "build" : "app/static";
 const path = {
   scss: {
-    src: "src/static/styles/**/*.scss",
-    dest: `${buildDir}/css`
+    src: "app/raw/styles/**/*.scss",
+    dest: `${buildDir}/css`,
   },
   js: {
-    site: "src/static/js/site.js",
-    src: "src/static/js/**/*.*",
-    dest: `${buildDir}/js`
+    site: "app/raw/js/site.js",
+    src: "app/raw/js/**/*.*",
+    dest: `${buildDir}/js`,
   },
-  html: "./*.html",
   img: {
-    src: "src/static/img/**/*",
-    dest: `${buildDir}/img`
+    src: "app/raw/img/**/*",
+    dest: `${buildDir}/img`,
   },
   fonts: {
-    src: "src/static/fonts/*",
+    src: "app/raw/fonts/*",
     dest: `${buildDir}/fonts`,
     vendor: {
-      src: "node_modules/font-awesome/fonts/*"
-    }
-  }
+      src: "node_modules/font-awesome/fonts/*",
+    },
+  },
+  html: {
+    src: "app/templates/**/*.html",
+  },
 };
 
-function reload(done) {
-  server.reload();
-  done();
-}
+const clearCache = (done) => cache.clearAll(done);
 
-function serve(done) {
+const clean = () => del(["app/static/**/*", "build/**/*"]);
+const server = browserSync.create();
+const runServer = () => {
   server.init({
-    server: {
-      buildDir: "./"
+    proxy: {
+      target: "localhost:5003",
     },
-    port: PROD ? 8000 : 3000
+    ws: true,
   });
-  done();
-}
+};
+const reload = (none) => {
+  server.reload();
+  none();
+};
 
 // Compile sass into CSS
 function sassTask() {
@@ -77,23 +81,21 @@ function sassTask() {
 
 // JS task: concatenates and uglifies JS files to script.js
 function jsTask() {
-  return src(path.js.site)
-    .pipe(cond(!PROD, sourcemaps.init({ loadMaps: true })))
+  return src(path.js.site, { sourcemaps: !PROD })
     .pipe(babel())
     .pipe(cond(PROD, uglify()))
     .pipe(cond(PROD, concat("main.min.js"), concat("main.js")))
-    .pipe(cond(!PROD, sourcemaps.write(".")))
-    .pipe(dest(path.js.dest));
+    .pipe(dest(path.js.dest, { sourcemaps: "." }));
 }
 
 function buildReact() {
-  return src("./src/static/js/index.js", { sourcemaps: !PROD })
+  return src("./app/raw/js/index.js", { sourcemaps: !PROD })
     .pipe(
       bro({
-        basedir: "./src/static/js/",
+        basedir: "./app/raw/js/",
         extensions: [".js", ".jsx"],
         debug: !PROD,
-        transform: [babelify]
+        transform: [babelify],
       })
     )
     .pipe(rename("bundle.js"))
@@ -108,7 +110,7 @@ function moveImg() {
       cond(
         PROD,
         imagemin({
-          verbose: true
+          verbose: true,
         })
       )
     )
@@ -116,15 +118,13 @@ function moveImg() {
 }
 
 function mvFontAwesome() {
-  return src([path.fonts.vendor.src, path.fonts.src]).pipe(
-    dest(path.fonts.dest)
-  );
+  return src([path.fonts.vendor.src, path.fonts.src]).pipe(dest(path.fonts.dest));
 }
 
 const watchall = () =>
   watch(
-    [path.scss.src, path.js.src, path.html],
-    series(parallel(sassTask, jsTask, buildReact), reload)
+    [path.scss.src, path.js.src, path.html.src],
+    series(parallel(sassTask, jsTask, buildReact), clearCache, reload)
   );
 
 module.exports.default = series(
@@ -132,6 +132,6 @@ module.exports.default = series(
   mvFontAwesome,
   moveImg,
   parallel(sassTask, jsTask, buildReact),
-  serve,
+  runServer,
   watchall
 );

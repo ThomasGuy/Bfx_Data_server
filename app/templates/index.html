@@ -5,19 +5,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- Needed for responsive design -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- If you want custom browser colors on mobile -->
     <meta name="theme-color" content="#1843c1" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1" />
 
-    <title>Layout Template</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
-      rel="stylesheet"
-    />
+    <title>Bitfinex Coins</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Poiret+One"
       rel="stylesheet"
@@ -28,34 +22,30 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="dist/css/main.css" />
-    <link rel="shortcut icon" href="dist/img/favicon.ico" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />
   </head>
-  <body
-    class="container"
-    data-spy="scroll"
-    data-target="#topnav"
-    data-offset="76"
-  >
+  <body class="container" data-spy="scroll" data-target="#topnav" data-offset="76">
     <!-- Nav -->
-  <div class="container">
-    <div class="row mx-auto" id="topnav"></div>
-  </div>
+    <div class="container">
+      <div class="row mx-auto" id="topnav"></div>
+    </div>
 
     <!-- welcome -->
-
-    <div class="jumbotron mysite-section bg-mysite-welcome" id="welcome"">
-      <div class="row">
-            <h1>Welcome</h1>
-          </div>
+    <div class="container-fluid bg-mysite-welcome bg-mysite-lite" id="welcome">
+      <div class="jumbotron">
+        <div class="row">
+          <h1>Welcome To London</h1>
         </div>
+      </div>
+    </div>
 
-    <!-- feature -->
-    <section id="gallery"></section>
+    <!-- test react bootstrap -->
+    <section id="test"></section>
 
     <!-- contact -->
     <section id="contact">
-      <div class="container-fluid mysite-section bg-mysite-dark">
+      <div class="container-fluid mysite-section bg-mysite-lite">
         <div class="container">
           <h3>Contact</h3>
         </div>
@@ -64,7 +54,7 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container-fluid mysite-section bg-mysite-light">
+      <div class="container-fluid mysite-section bg-mysite-dark">
         <div class="container">
           <div class="row">
             <h3>About</h3>
@@ -72,9 +62,6 @@
         </div>
       </div>
     </section>
-
-    <!-- test react bootstrap -->
-    <section id="test"></section>
 
     <!-- Footer -->
     <footer class="bg-mysite-dark footer text" id="footer">
@@ -87,7 +74,7 @@
         <div class="navbar-nav mx-auto">
           <a class="navbar-brand" href="#">
             <img
-              src="dist/img/TWG_logo2.png"
+              src="{{ url_for('static', filename='img/TWG-logo2.png') }}"
               alt="my-logo"
               height="25"
               class="d-inline-block align-top"
@@ -99,7 +86,7 @@
       </nav>
     </footer>
 
-    <script src="dist/js/bundle.js"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </body>
 </html>

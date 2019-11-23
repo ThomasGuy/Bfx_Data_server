@@ -5,7 +5,7 @@ import MySection from "./MySection";
 class App extends Component {
   state = {
     name: "Thomas",
-    age: 53
+    age: 53,
   };
 
   render() {

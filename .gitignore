@@ -1,7 +1,9 @@
 node_modules
-build
-dist
+build/**
+app/static/**
 .vscode
+*.pyc
+__pycache__
 
 .venv
 .env

@@ -12,14 +12,15 @@ h6,
 .navbar {
   font-family: "Poiret One", cursive;
 }
+
 .mysite-section {
-  min-height: 500px;
+  min-height: 400px;
 }
 .bg-mysite-dark {
   background-color: $bg-dark;
   color: $bg-lite;
 }
-.bg-mysite-light {
+.bg-mysite-lite {
   background-color: $bg-lite;
   color: $bg-dark;
 }

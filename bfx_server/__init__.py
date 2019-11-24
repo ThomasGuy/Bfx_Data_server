@@ -1,14 +1,14 @@
 from flask import Flask
 from flask_cachebuster import CacheBuster
 from flask_sqlalchemy import SQLAlchemy
-from flask_socketio import SocketIO, emit
+# from flask_socketio import SocketIO
 
 
 cb_Config = {'extensions': ['.js', '.css', '.csv'], 'hash_size': 5}
 
 # Globally accessible libraries
 db = SQLAlchemy()
-socketio = SocketIO()
+# socketio = SocketIO()
 cache_buster = CacheBuster(config=cb_Config)
 
 
@@ -26,8 +26,13 @@ def create_app(config):
 
     # Initialize Plugins
     db.init_app(app)
-    socketio.init_app(app)
+    # socketio.init_app(app)
     cache_buster.init_app(app)
 
     with app.app_context():
+        from bfx_server.blueprints import home, errors, data
+        app.register_blueprint(home.bp)
+        app.register_blueprint(errors.err, url_prefix='/error')
+        app.register_blueprint(data.bp)
+
         return app

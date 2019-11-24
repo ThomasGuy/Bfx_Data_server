@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lanf="en-US">
+  <head>
+    <!-- General meta tags needed-->
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- If you want custom browser colors on mobile -->
+    <meta name="theme-color" content="#1843c1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1" />
+
+    <title>Bitfinex Coins</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poiret+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato& subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />
+  </head>
+  <body class="container" data-spy="scroll" data-target="#topnav" data-offset="76">
+    <!-- Nav -->
+    <div class="container">
+      <div class="row mx-auto" id="topnav"></div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    <footer class="bg-mysite-dark footer text" id="footer">
+      <div class="text-center">
+        <p class="text-muted">2020 &copy; Inc.</p>
+        <p class="text-muted">Terms &amp;Conditions</p>
+      </div>
+
+      <nav class="navbar navbar-expand">
+        <div class="navbar-nav mx-auto">
+          <a class="navbar-brand" href="#">
+            <img
+              src="{{ url_for('static', filename='img/TwgLogo.png') }}"
+              alt="my-logo"
+              height="25"
+              class="d-inline-block align-top"
+          /></a>
+          <a class="nav-link" href="#about">About Us</a>
+          <a class="nav-link" href="#welcome">Top</a>
+          <a class="nav-link disabled">Sport</a>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>

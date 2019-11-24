@@ -2,7 +2,7 @@
 import os
 
 
-class Config:
+class Config(object):
     """Base config vars."""
     SECRET_KEY = os.getenv('SECRET_KEY') or 'secret'
     SESSION_COOKIE_NAME = os.getenv('SESSION_COOKIE_NAME') or 'cookie'
@@ -13,7 +13,7 @@ class Config:
 
 class DevConfig(Config):
     DEBUG = True
-    DATABASE_URI = os.getenv('DEV_DATABASE_URI') or "sqlite:///:memory:"
+    SQLALCHEMY_DATABASE_URI = os.getenv('DEV_DATABASE_URI') or "sqlite:///:memory:"
     print('development config set...')
 
 

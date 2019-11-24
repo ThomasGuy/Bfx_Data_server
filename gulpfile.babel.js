@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { src, dest, watch, series, parallel } from "gulp";
 import sourcemaps from "gulp-sourcemaps";
 import babel from "gulp-babel";

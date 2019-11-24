@@ -17,51 +17,50 @@ import babelify from "babelify";
 import bro from "gulp-bro";
 import rename from "gulp-rename";
 import buffer from "vinyl-buffer";
-import cache from "gulp-cache";
-
-// import { exec } from "child_process";
+// import cache from "gulp-cache";
 
 sass.compiler = require("node-sass");
 
 const PROD = process.env.NODE_ENV === "production";
-const buildDir = PROD ? "build" : "app/static";
+const buildDir = PROD ? "build" : "bfx_server/public";
 const path = {
   scss: {
-    src: "app/raw/styles/**/*.scss",
+    src: "client_UI/styles/**/*.scss",
     dest: `${buildDir}/css`,
   },
   js: {
-    site: "app/raw/js/site.js",
-    src: "app/raw/js/**/*.*",
+    site: "client_UI/js/site.js",
+    src: "client_UI/js/**/*.*",
     dest: `${buildDir}/js`,
   },
   img: {
-    src: "app/raw/img/**/*",
+    src: "client_UI/img/**/*",
     dest: `${buildDir}/img`,
   },
   fonts: {
-    src: "app/raw/fonts/*",
+    src: "client_UI/fonts/*",
     dest: `${buildDir}/fonts`,
     vendor: {
       src: "node_modules/font-awesome/fonts/*",
     },
   },
   html: {
-    src: "app/templates/**/*.html",
+    src: "bfx_server/templates/**/*.html",
   },
 };
 
-const clearCache = (done) => cache.clearAll(done);
+// const clearCache = (done) => cache.clearAll(done);
 
-const clean = () => del(["app/static/**/*", "build/**/*"]);
+const clean = () => del(["bfx_sever/public/**/*", "build/**/*"]);
 const server = browserSync.create();
-const runServer = () => {
+const runServer = (resolve) => {
   server.init({
     proxy: {
-      target: "localhost:5003",
+      target: "localhost:5000",
     },
     ws: true,
   });
+  resolve();
 };
 const reload = (none) => {
   server.reload();
@@ -76,7 +75,8 @@ function sassTask() {
     .pipe(cleanCSS())
     .pipe(cond(PROD, postcss([autoprefixer(), cssnano()])))
     .pipe(cond(!PROD, sourcemaps.write(".")))
-    .pipe(dest(path.scss.dest));
+    .pipe(dest(path.scss.dest))
+    .pipe(server.stream());
 }
 
 // JS task: concatenates and uglifies JS files to script.js
@@ -85,14 +85,15 @@ function jsTask() {
     .pipe(babel())
     .pipe(cond(PROD, uglify()))
     .pipe(cond(PROD, concat("main.min.js"), concat("main.js")))
-    .pipe(dest(path.js.dest, { sourcemaps: "." }));
+    .pipe(dest(path.js.dest, { sourcemaps: "." }))
+    .pipe(server.stream());
 }
 
 function buildReact() {
-  return src("./app/raw/js/index.js", { sourcemaps: !PROD })
+  return src("./client_UI/js/index.js", { sourcemaps: !PROD })
     .pipe(
       bro({
-        basedir: "./app/raw/js/",
+        basedir: "./client_UI/js/",
         extensions: [".js", ".jsx"],
         debug: !PROD,
         transform: [babelify],
@@ -101,7 +102,8 @@ function buildReact() {
     .pipe(rename("bundle.js"))
     .pipe(cond(PROD, buffer())) // Stream files
     .pipe(cond(PROD, uglify()))
-    .pipe(dest(path.js.dest, { sourcemaps: "." }));
+    .pipe(dest(path.js.dest, { sourcemaps: "." }))
+    .pipe(server.stream());
 }
 
 function moveImg() {
@@ -124,7 +126,7 @@ function mvFontAwesome() {
 const watchall = () =>
   watch(
     [path.scss.src, path.js.src, path.html.src],
-    series(parallel(sassTask, jsTask, buildReact), clearCache, reload)
+    series(parallel(sassTask, jsTask, buildReact), reload)
   );
 
 module.exports.default = series(

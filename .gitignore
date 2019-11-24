@@ -1,9 +1,11 @@
 node_modules
 build/**
 app/static/**
+app/public/**
 .vscode
 *.pyc
 __pycache__
+instance
 
 .venv
 .env

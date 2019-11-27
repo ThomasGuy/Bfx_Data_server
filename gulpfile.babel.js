@@ -16,48 +16,46 @@ import babelify from "babelify";
 import bro from "gulp-bro";
 import rename from "gulp-rename";
 import buffer from "vinyl-buffer";
-// import cache from "gulp-cache";
 
 sass.compiler = require("node-sass");
 
 const PROD = process.env.NODE_ENV === "production";
-const buildDir = PROD ? "build" : "bfx_server/public";
+const buildDir = PROD ? "build" : "bfx_data_server/public";
 const path = {
   scss: {
-    src: "client_UI/styles/**/*.scss",
+    src: "bfx_data_server/client_UI/styles/**/*.scss",
     dest: `${buildDir}/css`,
   },
   js: {
-    site: "client_UI/js/site.js",
-    src: "client_UI/js/**/*.*",
+    site: "bfx_data_server/client_UI/js/site.js",
+    src: "bfx_data_server/client_UI/js/**/*.*",
     dest: `${buildDir}/js`,
   },
   img: {
-    src: "client_UI/img/**/*",
+    src: "bfx_data_server/client_UI/img/**/*",
     dest: `${buildDir}/img`,
   },
   fonts: {
-    src: "client_UI/fonts/*",
+    src: "bfx_data_server/client_UI/fonts/*",
     dest: `${buildDir}/fonts`,
     vendor: {
       src: "node_modules/font-awesome/fonts/*",
     },
   },
   html: {
-    src: "bfx_server/templates/**/*.html",
+    src: "bfx_data_server/server/templates/**/*.html",
   },
 };
 
-// const clearCache = (done) => cache.clearAll(done);
-
-const clean = () => del(["bfx_sever/public/**/*", "build/**/*"]);
+const clean = () => del(["bfx_data_sever/public/**/*", "build/**/*"]);
 const server = browserSync.create();
 const runServer = (resolve) => {
   server.init({
     proxy: {
       target: "localhost:5000",
+      ws: true,
     },
-    ws: true,
+    reloadDelay: 400,
   });
   resolve();
 };
@@ -89,10 +87,10 @@ function jsTask() {
 }
 
 function buildReact() {
-  return src("./client_UI/js/index.js", { sourcemaps: !PROD })
+  return src("./bfx_data_server/client_UI/js/index.js", { sourcemaps: !PROD })
     .pipe(
       bro({
-        basedir: "./client_UI/js/",
+        basedir: "./bfx_data_server/client_UI/js/",
         extensions: [".js", ".jsx"],
         debug: !PROD,
         transform: [babelify],

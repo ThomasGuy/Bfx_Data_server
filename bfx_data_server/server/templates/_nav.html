@@ -3,11 +3,11 @@
 <nav class="navbar navbar-expand-sm navbar-mysite fixed-top" id="topnav">
   <a class="navbar-brand" href="#">
     <img
-      src="{{ url_for('static', filename='img/TwgLogo.png') }}"
+      src="{{ url_for('static', filename='dist/img/TwgLogo.png') }}"
       alt="my-logo"
       height="50"
-      class="d-inline-block align-top"
-  /></a>
+      class="d-inline-block align-top">
+  </a>
   <button
     class="navbar-toggler d-lg-none"
     type="button"
@@ -27,13 +27,17 @@
       <li class="nav-item">
         <a class="nav-link" href="/main">Coins</a>
       </li>
-      <li class="nav-item nav-link">
+      <li class="nav-item">
         <div id="twg-dropdown-nav"></div>
       </li>
     </ul>
     <ul class="navbar-nav my-2 my-lg-0">
-      <div class="nav-item nav-link" id="twg-login"></div>
-      <div class="nav-item nav-link" id="twg-register"></div>
+      <li class="nav-item">
+        <a href="{{ url_for('auth.login') }}" class="nav-link">Login</a>
+      </li>
+      <li class="nav-item">
+        <a href="/register" class="nav-link">Register</a>
+      </li>
     </ul>
   </div>
 </nav>

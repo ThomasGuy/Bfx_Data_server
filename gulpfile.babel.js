@@ -20,23 +20,23 @@ import buffer from "vinyl-buffer";
 sass.compiler = require("node-sass");
 
 const PROD = process.env.NODE_ENV === "production";
-const buildDir = PROD ? "build" : "bfx_data_server/public";
+const buildDir = PROD ? "build" : "bfx_data_server/server/static/dist";
 const path = {
   scss: {
-    src: "bfx_data_server/client_UI/styles/**/*.scss",
+    src: "bfx_data_server/server/static/src/styles/**/*.scss",
     dest: `${buildDir}/css`,
   },
   js: {
-    site: "bfx_data_server/client_UI/js/site.js",
-    src: "bfx_data_server/client_UI/js/**/*.*",
+    site: "bfx_data_server/server/static/src/js/site.js",
+    src: "bfx_data_server/server/static/src/js/**/*.*",
     dest: `${buildDir}/js`,
   },
   img: {
-    src: "bfx_data_server/client_UI/img/**/*",
+    src: "bfx_data_server/server/static/src/img/**/*",
     dest: `${buildDir}/img`,
   },
   fonts: {
-    src: "bfx_data_server/client_UI/fonts/*",
+    src: "bfx_data_server/server/static/src/fonts/*",
     dest: `${buildDir}/fonts`,
     vendor: {
       src: "node_modules/font-awesome/fonts/*",
@@ -47,7 +47,7 @@ const path = {
   },
 };
 
-const clean = () => del(["bfx_data_sever/public/**/*", "build/**/*"]);
+const clean = () => del(["bfx_data_sever/server/static/dist/**/*", "build/**/*"]);
 const server = browserSync.create();
 const runServer = (resolve) => {
   server.init({
@@ -87,10 +87,10 @@ function jsTask() {
 }
 
 function buildReact() {
-  return src("./bfx_data_server/client_UI/js/index.js", { sourcemaps: !PROD })
+  return src("./bfx_data_server/server/static/src/js/index.js", { sourcemaps: !PROD })
     .pipe(
       bro({
-        basedir: "./bfx_data_server/client_UI/js/",
+        basedir: "./bfx_data_server/server/static/src/js/",
         extensions: [".js", ".jsx"],
         debug: !PROD,
         transform: [babelify],

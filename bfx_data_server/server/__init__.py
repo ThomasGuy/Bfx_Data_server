@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy_session import flask_scoped_session
-# from flask_redis import FlaskRedis
+from flask_redis import FlaskRedis
 from flask_login import LoginManager
 
 # package imports
@@ -19,7 +19,7 @@ def create_app(config):
                 static_folder='static')
     app.config.from_object(config)
 
-    # redis_store = FlaskRedis()
+    redis_store = FlaskRedis()
     login_manager = LoginManager()
     login_manager.login_view = 'auth.login'
 

@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 
 function NavMenu() {
-  const { up, down } = useState(false);
 
   return (
     <DropdownButton variant='secondary' id='dropdown-basic-button' title='Menu'>

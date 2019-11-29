@@ -1,2 +1,1 @@
-dist/**
-build/**
+bfx_data_server/server/static/dist/**

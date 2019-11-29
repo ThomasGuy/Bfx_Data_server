@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from "react";
+import PropTypes from 'prop-types';
 
 const MySection = ({ name, age }) => (
   <div className="container-fluid mysite-section bg-mysite-dark" id="mySection">
@@ -16,5 +16,10 @@ const MySection = ({ name, age }) => (
     </div>
   </div>
 );
+
+MySection.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired,
+}
 
 export default MySection;

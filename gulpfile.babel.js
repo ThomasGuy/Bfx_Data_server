@@ -49,7 +49,7 @@ const path = {
 
 const clean = () => del(["bfx_data_sever/server/static/dist/**/*", "build/**/*"]);
 const server = browserSync.create();
-const runServer = (resolve) => {
+const runServer = resolve => {
   server.init({
     proxy: {
       target: "localhost:5000",
@@ -59,7 +59,7 @@ const runServer = (resolve) => {
   });
   resolve();
 };
-const reload = (none) => {
+const reload = none => {
   server.reload();
   none();
 };
@@ -132,5 +132,5 @@ module.exports.default = series(
   moveImg,
   parallel(sassTask, jsTask, buildReact),
   runServer,
-  watchall
+  watchall,
 );

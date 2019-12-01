@@ -15,7 +15,7 @@ window.onload = () => {
     }
   }
 
-  elems.forEach((el) => el.addEventListener("click", getHref));
+  elems.forEach(el => el.addEventListener("click", getHref));
 
   // We can set a scss variable like this ????
   document.documentElement.style.setProperty("$fixed-top-offset", navOffset);

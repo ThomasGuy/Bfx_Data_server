@@ -49,17 +49,16 @@ const path = {
 
 const clean = () => del(["bfx_data_sever/server/static/dist/**/*", "build/**/*"]);
 const server = browserSync.create();
-const runServer = resolve => {
+const runServer = (resolve) => {
   server.init({
     proxy: {
       target: "localhost:5000",
       ws: true,
     },
-    reloadDelay: 400,
   });
   resolve();
 };
-const reload = none => {
+const reload = (none) => {
   server.reload();
   none();
 };
@@ -94,7 +93,7 @@ function buildReact() {
         extensions: [".js", ".jsx"],
         debug: !PROD,
         transform: [babelify],
-      })
+      }),
     )
     .pipe(rename("bundle.js"))
     .pipe(cond(PROD, buffer())) // Stream files
@@ -110,8 +109,8 @@ function moveImg() {
         PROD,
         imagemin({
           verbose: true,
-        })
-      )
+        }),
+      ),
     )
     .pipe(dest(path.img.dest));
 }
@@ -123,7 +122,7 @@ function mvFontAwesome() {
 const watchall = () =>
   watch(
     [path.scss.src, path.js.src, path.html.src],
-    series(parallel(sassTask, jsTask, buildReact), reload)
+    series(parallel(sassTask, jsTask, buildReact), reload),
   );
 
 module.exports.default = series(

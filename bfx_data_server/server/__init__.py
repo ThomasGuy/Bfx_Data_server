@@ -2,11 +2,13 @@ from flask import Flask
 from flask_sqlalchemy_session import flask_scoped_session
 from flask_redis import FlaskRedis
 from flask_login import LoginManager
+from flask_cachebuster import CacheBuster
 
 # package imports
 from bfx_data_server import session_factory
 from bfx_data_server.database.models import User
 
+cb_config = { 'extensions': ['.js', '.css', '.csv'], 'hash_size': 5 }
 
 def create_app(config):
     """
@@ -16,9 +18,11 @@ def create_app(config):
     """
     app = Flask(__name__,
                 instance_relative_config=False,
-                static_folder='static')
+                static_folder='static',
+                template_folder='templates')
     app.config.from_object(config)
 
+    cache_buster = CacheBuster(config=cb_config)
     redis_store = FlaskRedis()
     login_manager = LoginManager()
     login_manager.login_view = 'auth.login'
@@ -32,6 +36,7 @@ def create_app(config):
         session = flask_scoped_session(session_factory, app)
         # Initialize Plugins
         login_manager.init_app(app)
+        cache_buster.init_app(app)
 
         @login_manager.user_loader
         def load_user(id):

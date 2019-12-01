@@ -10,6 +10,7 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     HOST_NAME = 'localhost:5000'
     PORT = 5000
+    SEND_FILE_MAX_AGE_DEFAULT = 0
 
 
 class DevConfig(Config):

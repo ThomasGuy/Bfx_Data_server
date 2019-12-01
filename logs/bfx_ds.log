@@ -1,1 +1,929 @@
-11-29 22:21 werkzeug     INFO     127.0.0.1 - - [29/Nov/2019 22:21:46] "GET / HTTP/1.1" 200 -
+11-30 20:45 bfx_data_server.server DEBUG    Computing hashes for static assets...
+11-30 20:45 bfx_data_server.server DEBUG    Computing hashes for /c/Users/twguy/WSL_projects/tom_projects/WSGI_Flask/Bfx_Data_Server/bfx_data_server/server/static/dist/css/main.css
+11-30 20:45 bfx_data_server.server DEBUG    Computing hashes for /c/Users/twguy/WSL_projects/tom_projects/WSGI_Flask/Bfx_Data_Server/bfx_data_server/server/static/dist/js/bundle.js
+11-30 20:45 bfx_data_server.server DEBUG    Computing hashes for /c/Users/twguy/WSL_projects/tom_projects/WSGI_Flask/Bfx_Data_Server/bfx_data_server/server/static/dist/js/main.js
+11-30 20:45 bfx_data_server.server DEBUG    Computing hashes for /c/Users/twguy/WSL_projects/tom_projects/WSGI_Flask/Bfx_Data_Server/bfx_data_server/server/static/src/js/index.js
+11-30 20:45 bfx_data_server.server DEBUG    Computing hashes for /c/Users/twguy/WSL_projects/tom_projects/WSGI_Flask/Bfx_Data_Server/bfx_data_server/server/static/src/js/site.js
+11-30 20:45 bfx_data_server.server INFO     Hashes generated for all static assets.
+11-30 20:45 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:45:55] "GET / HTTP/1.1" 200 -
+11-30 20:45 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:45:56] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 20:45 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:45:56] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 20:45 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:45:56] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 304 -
+11-30 20:45 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:45:56] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 20:45 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:45:56] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:19] "GET / HTTP/1.1" 200 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:19] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:19] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 304 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:19] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:19] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:19] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:20] "GET / HTTP/1.1" 200 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:20] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:20] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 304 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:20] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:20] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 20:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:54:20] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+11-30 20:55 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:55:37] "GET / HTTP/1.1" 200 -
+11-30 20:55 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:55:37] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 20:55 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:55:37] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 20:55 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:55:37] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 304 -
+11-30 20:55 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:55:37] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 20:55 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 20:55:37] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+11-30 21:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:00:00] "GET / HTTP/1.1" 200 -
+11-30 21:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:00:00] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 21:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:00:00] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 304 -
+11-30 21:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:00:00] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 21:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:00:00] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 21:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:00:00] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:00] "GET / HTTP/1.1" 200 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:00] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:00] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:00] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:00] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:00] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:39] "GET / HTTP/1.1" 200 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:39] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:39] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:39] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:39] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 21:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:01:39] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:04] "GET / HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:04] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:04] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:04] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:04] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:04] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:05] "GET / HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:05] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:05] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:05] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:05] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:05] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:13] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:13] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:13] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:13] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:16] "GET / HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:16] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:16] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:16] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:16] "GET /static/dist/img/skyline.png HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:16] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:16] "GET /static/dist/css/main.css.map HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:16] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:16] "GET /static/dist/js/main.js.map HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:16] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:37] "GET /main HTTP/1.1" 200 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:37] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:37] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:37] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:37] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:37] "GET /static/dist/css/main.css.map HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:37] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+11-30 21:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:03:37] "GET /static/dist/js/main.js.map HTTP/1.1" 304 -
+11-30 21:04 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:04:40] "GET /main HTTP/1.1" 200 -
+11-30 21:04 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:04:40] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 21:04 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:04:40] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 21:04 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:04:40] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:04 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:04:41] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:04 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:04:41] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 21:04 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:04:41] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:04 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:04:41] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:21] "GET /main HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:22] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:22] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:22] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:22] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:22] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:22] "GET /:/localhost:5000/api/data HTTP/1.1" 404 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:22] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:22] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:46] "GET /main HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:46] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:46] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:46] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:46] "GET /:/localhost:5000/api/data HTTP/1.1" 404 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:46] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:47] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:47] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:47] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:05:47] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:06:12] "GET /main HTTP/1.1" 200 -
+11-30 21:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:06:12] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:06:12] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:06:13] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:06:13] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:06 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 21:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:06:13] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:06:13] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:06:13] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:06:13] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:06 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 21:06 bfx_data_server.api.getCoins INFO     {'BTC': 7552.1, 'LTC': 47.606, 'ETH': 151.74, 'XRP': 0.22526, 'NEO': 9.316, 'EOS': 2.7589, 'BSV': 107.19, 'IOT': 0.20913}
+11-30 21:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:06:15] "GET /api/data HTTP/1.1" 200 -
+11-30 21:07 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:07:43] "GET /main HTTP/1.1" 200 -
+11-30 21:07 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:07:43] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:07 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:07:43] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:07 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:07:44] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:07 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 21:07 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:07:44] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:07 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 21:07 bfx_data_server.api.getCoins INFO     {'BTC': 7554.1, 'LTC': 47.561, 'ETH': 151.76, 'XRP': 0.22526, 'NEO': 9.3201, 'EOS': 2.7589, 'BSV': 107.01, 'IOT': 0.20913}
+11-30 21:07 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:07:44] "GET /api/data HTTP/1.1" 200 -
+11-30 21:07 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:07:44] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:07 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:07:44] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:07 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:07:44] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:07 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:07:44] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:08 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:08:37] "GET /main HTTP/1.1" 200 -
+11-30 21:08 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:08:37] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:08 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:08:37] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:08 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:08:37] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:08 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 21:08 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:08:37] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:08 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 21:08 bfx_data_server.api.getCoins INFO     {'BTC': 7554.1, 'LTC': 47.565, 'ETH': 151.76, 'XRP': 0.22526, 'NEO': 9.3201, 'EOS': 2.7589, 'BSV': 106.69, 'IOT': 0.20913}
+11-30 21:08 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:08:37] "GET /api/data HTTP/1.1" 200 -
+11-30 21:08 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:08:38] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:08 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:08:38] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:08 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:08:38] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:08 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:08:38] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:30] "GET /main HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:30] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:31] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:31] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:31] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:11 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 21:11 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 21:11 bfx_data_server.api.getCoins INFO     {'BTC': 7554.7, 'LTC': 47.595, 'ETH': 151.78, 'XRP': 0.2254, 'NEO': 9.3256, 'EOS': 2.7604, 'BSV': 106.83, 'IOT': 0.20913}
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:31] "GET /api/data HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:31] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:31] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:31] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:31] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:52] "GET /main HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:52] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:52] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:52] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:52] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:11 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 21:11 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 21:11 bfx_data_server.api.getCoins INFO     {'BTC': 7554.7, 'LTC': 47.557, 'ETH': 151.74, 'XRP': 0.22534, 'NEO': 9.3256, 'EOS': 2.7604, 'BSV': 106.87, 'IOT': 0.20913}
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:52] "GET /api/data HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:52] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:52] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:52] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:11:52] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:13:34] "GET /main HTTP/1.1" 200 -
+11-30 21:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:13:34] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:13:34] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:13:34] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:13 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 21:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:13:35] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:13 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 21:13 bfx_data_server.api.getCoins INFO     {'BTC': 7555.2, 'LTC': 47.62, 'ETH': 151.8, 'XRP': 0.2254, 'NEO': 9.3277, 'EOS': 2.7604, 'BSV': 106.99, 'IOT': 0.20913}
+11-30 21:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:13:35] "GET /api/data HTTP/1.1" 200 -
+11-30 21:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:13:35] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:13:35] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:13:35] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:13:35] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:14:26] "GET /main HTTP/1.1" 200 -
+11-30 21:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:14:26] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:14:26] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:14:26] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:14:26] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:14 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 21:14 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 21:14 bfx_data_server.api.getCoins INFO     {'BTC': 7555.2, 'LTC': 47.564, 'ETH': 151.8, 'XRP': 0.2254, 'NEO': 9.3295, 'EOS': 2.7604, 'BSV': 106.94, 'IOT': 0.20913}
+11-30 21:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:14:26] "GET /api/data HTTP/1.1" 200 -
+11-30 21:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:14:26] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:14:26] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:14:27] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:14:27] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:19 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:19:00] "GET /main HTTP/1.1" 200 -
+11-30 21:19 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:19:00] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:19 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:19:00] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:19 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:19:01] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:19 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:19:01] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:19 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 21:19 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 21:19 bfx_data_server.api.getCoins INFO     {'BTC': 7557.2, 'LTC': 47.626, 'ETH': 151.89, 'XRP': 0.22535, 'NEO': 9.3314, 'EOS': 2.7611, 'BSV': 107.13, 'IOT': 0.20921}
+11-30 21:19 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:19:01] "GET /api/data HTTP/1.1" 200 -
+11-30 21:19 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:19:01] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:19 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:19:01] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:19 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:19:01] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:19 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:19:01] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:25:12] "GET /main HTTP/1.1" 200 -
+11-30 21:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:25:12] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:25:12] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:25:12] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:25:12] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:25 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 21:25 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 21:25 bfx_data_server.api.getCoins INFO     {'BTC': 7570.1, 'LTC': 47.562, 'ETH': 152.03, 'XRP': 0.22596, 'NEO': 9.3338, 'EOS': 2.7656, 'BSV': 107.15, 'IOT': 0.20944}
+11-30 21:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:25:12] "GET /api/data HTTP/1.1" 200 -
+11-30 21:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:25:13] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:25:13] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:25:13] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:25:13] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 21:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:54:22] "GET /main HTTP/1.1" 200 -
+11-30 21:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:54:22] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 21:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:54:22] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 21:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:54:22] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 21:54 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 21:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:54:22] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 21:54 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 21:54 bfx_data_server.api.getCoins INFO     {'BTC': 7574.7, 'LTC': 47.562, 'ETH': 152.39, 'XRP': 0.22607, 'NEO': 9.3521, 'EOS': 2.7707, 'BSV': 107.15, 'IOT': 0.21065}
+11-30 21:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:54:22] "GET /api/data HTTP/1.1" 200 -
+11-30 21:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:54:23] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 21:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:54:23] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 21:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:54:23] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 21:54 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 21:54:23] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:00:40] "GET /main HTTP/1.1" 200 -
+11-30 22:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:00:40] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:00:40] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:00:40] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:00:40] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:00 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:00 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:00 bfx_data_server.api.getCoins INFO     {'BTC': 7581.7, 'LTC': 47.592, 'ETH': 152.67, 'XRP': 0.22598, 'NEO': 9.3532, 'EOS': 2.769, 'BSV': 107.27, 'IOT': 0.21065}
+11-30 22:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:00:41] "GET /api/data HTTP/1.1" 200 -
+11-30 22:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:00:41] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:00:41] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:00:41] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:00:41] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:02:42] "GET /main HTTP/1.1" 200 -
+11-30 22:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:02:42] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:02:42] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:02:42] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:02:43] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:02 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:02 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:02 bfx_data_server.api.getCoins INFO     {'BTC': 7592.6, 'LTC': 47.636, 'ETH': 152.96, 'XRP': 0.22633, 'NEO': 9.3611, 'EOS': 2.77, 'BSV': 107.81, 'IOT': 0.21102}
+11-30 22:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:02:43] "GET /api/data HTTP/1.1" 200 -
+11-30 22:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:02:43] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:02:43] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:02:43] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:02:43] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:03:17] "GET /main HTTP/1.1" 200 -
+11-30 22:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:03:17] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:03:17] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:03:17] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:03:17] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:03 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:03 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:03 bfx_data_server.api.getCoins INFO     {'BTC': 7603.6, 'LTC': 47.661, 'ETH': 152.96, 'XRP': 0.22661, 'NEO': 9.368, 'EOS': 2.7708, 'BSV': 107.82, 'IOT': 0.21102}
+11-30 22:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:03:18] "GET /api/data HTTP/1.1" 200 -
+11-30 22:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:03:18] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:03:18] "GET /static/dist/css/main.css.map HTTP/1.1" 304 -
+11-30 22:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:03:18] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+11-30 22:03 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:03:18] "GET /static/dist/js/main.js.map HTTP/1.1" 304 -
+11-30 22:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:05:13] "GET /main HTTP/1.1" 200 -
+11-30 22:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:05:13] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:05:13] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:05:13] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:05 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:05:13] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:05 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:05 bfx_data_server.api.getCoins INFO     {'BTC': 7600.5, 'LTC': 47.599, 'ETH': 152.99, 'XRP': 0.22678, 'NEO': 9.3715, 'EOS': 2.7698, 'BSV': 108.03, 'IOT': 0.2113}
+11-30 22:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:05:13] "GET /api/data HTTP/1.1" 200 -
+11-30 22:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:05:14] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:05:14] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:05:14] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:05 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:05:14] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:06:46] "GET /main HTTP/1.1" 200 -
+11-30 22:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:06:46] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:06:47] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:06:47] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:06:47] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:06 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:06 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:06 bfx_data_server.api.getCoins INFO     {'BTC': 7600, 'LTC': 47.506, 'ETH': 153.01, 'XRP': 0.22681, 'NEO': 9.3819, 'EOS': 2.7699, 'BSV': 108.09, 'IOT': 0.21146}
+11-30 22:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:06:47] "GET /api/data HTTP/1.1" 200 -
+11-30 22:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:06:47] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:06:47] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:06:47] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:06 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:06:47] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:25:48] "GET /main HTTP/1.1" 200 -
+11-30 22:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:25:48] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:25:48] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:25:48] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:25 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:25:48] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:25 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:25 bfx_data_server.api.getCoins INFO     {'BTC': 7593.7, 'LTC': 47.453, 'ETH': 152.68, 'XRP': 0.22691, 'NEO': 9.3808, 'EOS': 2.764, 'BSV': 108.12, 'IOT': 0.21163}
+11-30 22:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:25:48] "GET /api/data HTTP/1.1" 200 -
+11-30 22:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:25:48] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:25:48] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+11-30 22:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:25:48] "GET /static/dist/css/main.css.map HTTP/1.1" 304 -
+11-30 22:25 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:25:48] "GET /static/dist/js/main.js.map HTTP/1.1" 304 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:27] "GET /main HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:27] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:27] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:27] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:30 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:28] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:30 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:30 bfx_data_server.api.getCoins INFO     {'BTC': 7589.3, 'LTC': 47.52, 'ETH': 152.68, 'XRP': 0.22661, 'NEO': 9.3789, 'EOS': 2.7683, 'BSV': 108.15, 'IOT': 0.21171}
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:28] "GET /api/data HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:28] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:28] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:28] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:28] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:56] "GET /main HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:56] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:56] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:56] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:56] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:30 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:30 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:30 bfx_data_server.api.getCoins INFO     {'BTC': 7589.3, 'LTC': 47.514, 'ETH': 152.68, 'XRP': 0.22671, 'NEO': 9.3817, 'EOS': 2.7684, 'BSV': 108.19, 'IOT': 0.21173}
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:56] "GET /api/data HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:56] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:56] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:56] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:30:57] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:40 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:40:28] "GET /main HTTP/1.1" 200 -
+11-30 22:40 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:40:28] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:40 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:40:28] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:40 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:40:28] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:40 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:40:29] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:40 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:40 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:40 bfx_data_server.api.getCoins INFO     {'BTC': 7598.1, 'LTC': 47.617, 'ETH': 152.59, 'XRP': 0.22662, 'NEO': 9.3949, 'EOS': 2.7684, 'BSV': 108, 'IOT': 0.21185}
+11-30 22:40 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:40:29] "GET /api/data HTTP/1.1" 200 -
+11-30 22:40 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:40:29] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:40 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:40:29] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:40 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:40:29] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:40 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:40:29] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:42:54] "GET /main HTTP/1.1" 200 -
+11-30 22:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:42:54] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:42:55] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:42:55] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:42 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:42:55] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:42 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:42 bfx_data_server.api.getCoins INFO     {'BTC': 7598.3, 'LTC': 47.642, 'ETH': 152.59, 'XRP': 0.22668, 'NEO': 9.3949, 'EOS': 2.7708, 'BSV': 107.99, 'IOT': 0.21185}
+11-30 22:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:42:55] "GET /api/data HTTP/1.1" 200 -
+11-30 22:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:42:55] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:42:55] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:42:55] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:42:55] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:44:36] "GET /main HTTP/1.1" 200 -
+11-30 22:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:44:36] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:44:36] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:44:36] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:44:36] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:44 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:44 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:44 bfx_data_server.api.getCoins INFO     {'BTC': 7598.4, 'LTC': 47.642, 'ETH': 152.59, 'XRP': 0.22668, 'NEO': 9.3949, 'EOS': 2.7708, 'BSV': 108.04, 'IOT': 0.21185}
+11-30 22:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:44:36] "GET /api/data HTTP/1.1" 200 -
+11-30 22:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:44:37] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:44:37] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:44:37] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:44:37] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:47 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:47:54] "GET /main HTTP/1.1" 200 -
+11-30 22:47 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:47:54] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:47 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:47:54] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:47 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:47:55] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:47 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:47:55] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:47 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:47:55] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:47 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:47 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:47:55] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:47 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:47:55] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:47 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:47:55] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:47 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:47 bfx_data_server.api.getCoins INFO     {'BTC': 7601.6, 'LTC': 47.646, 'ETH': 152.78, 'XRP': 0.22672, 'NEO': 9.3949, 'EOS': 2.7713, 'BSV': 108.2, 'IOT': 0.21189}
+11-30 22:47 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:47:55] "GET /api/data HTTP/1.1" 200 -
+11-30 22:51 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:51:24] "GET /main HTTP/1.1" 200 -
+11-30 22:51 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:51:24] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:51 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:51:24] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:51 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:51:24] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:51 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:51 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:51:25] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:51 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:51:25] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:51 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:51:25] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:51 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:51:25] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:51 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:51:25] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:51 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:51 bfx_data_server.api.getCoins INFO     {'BTC': 7601.4, 'LTC': 47.612, 'ETH': 152.7, 'XRP': 0.22679, 'NEO': 9.3949, 'EOS': 2.7743, 'BSV': 107.75, 'IOT': 0.21186}
+11-30 22:51 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:51:26] "GET /api/data HTTP/1.1" 200 -
+11-30 22:52 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:52:54] "GET /main HTTP/1.1" 200 -
+11-30 22:52 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:52:54] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:52 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:52:54] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:52 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:52:54] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:52 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:52 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:52:55] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:52 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:52 bfx_data_server.api.getCoins INFO     {'BTC': 7598.5, 'LTC': 47.557, 'ETH': 152.48, 'XRP': 0.22671, 'NEO': 9.3783, 'EOS': 2.7743, 'BSV': 107.78, 'IOT': 0.21192}
+11-30 22:52 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:52:55] "GET /api/data HTTP/1.1" 200 -
+11-30 22:52 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:52:55] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:52 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:52:55] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:52 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:52:55] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:52 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:52:55] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:56 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:56:33] "GET /main HTTP/1.1" 200 -
+11-30 22:56 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:56:33] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:56 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:56:33] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:56 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:56:33] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:56 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:56:33] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:56 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:56 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:56 bfx_data_server.api.getCoins INFO     {'BTC': 7597.6, 'LTC': 47.589, 'ETH': 152.58, 'XRP': 0.22678, 'NEO': 9.3708, 'EOS': 2.7718, 'BSV': 107.79, 'IOT': 0.21151}
+11-30 22:56 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:56:33] "GET /api/data HTTP/1.1" 200 -
+11-30 22:56 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:56:34] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:56 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:56:34] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:56 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:56:34] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:56 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:56:34] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:57 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:57:53] "GET /main HTTP/1.1" 200 -
+11-30 22:57 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:57:53] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:57 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:57:54] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:57 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:57:54] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:57 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:57 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:57:54] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:57 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:57 bfx_data_server.api.getCoins INFO     {'BTC': 7595.2, 'LTC': 47.568, 'ETH': 152.39, 'XRP': 0.22678, 'NEO': 9.3731, 'EOS': 2.7712, 'BSV': 107.72, 'IOT': 0.21169}
+11-30 22:57 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:57:54] "GET /api/data HTTP/1.1" 200 -
+11-30 22:57 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:57:54] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:57 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:57:54] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:57 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:57:54] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:57 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:57:54] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 22:59 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:59:32] "GET /main HTTP/1.1" 200 -
+11-30 22:59 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:59:32] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 22:59 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:59:32] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 22:59 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:59:32] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 22:59 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:59:32] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 22:59 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 22:59 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 22:59 bfx_data_server.api.getCoins INFO     {'BTC': 7595.2, 'LTC': 47.599, 'ETH': 152.45, 'XRP': 0.22678, 'NEO': 9.3731, 'EOS': 2.7712, 'BSV': 107.79, 'IOT': 0.21169}
+11-30 22:59 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:59:32] "GET /api/data HTTP/1.1" 200 -
+11-30 22:59 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:59:32] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 22:59 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:59:32] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 22:59 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:59:32] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 22:59 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 22:59:33] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:00:23] "GET /main HTTP/1.1" 200 -
+11-30 23:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:00:23] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:00:23] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:00:23] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:00:23] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:00 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:00 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:00 bfx_data_server.api.getCoins INFO     {'BTC': 7598.1, 'LTC': 47.613, 'ETH': 152.53, 'XRP': 0.22691, 'NEO': 9.3743, 'EOS': 2.7715, 'BSV': 107.93, 'IOT': 0.21111}
+11-30 23:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:00:23] "GET /api/data HTTP/1.1" 200 -
+11-30 23:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:00:24] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:00:24] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:00:24] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:00 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:00:24] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:02] "GET /main HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:02] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:02] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:02] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:03] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:01 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:01 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:01 bfx_data_server.api.getCoins INFO     {'BTC': 7598.2, 'LTC': 47.613, 'ETH': 152.58, 'XRP': 0.22692, 'NEO': 9.3751, 'EOS': 2.7715, 'BSV': 107.93, 'IOT': 0.21146}
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:03] "GET /api/data HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:03] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:03] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:03] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:03] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:55] "GET /main HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:55] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:55] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:56] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:56] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:01 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:01 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:01 bfx_data_server.api.getCoins INFO     {'BTC': 7597.7, 'LTC': 47.662, 'ETH': 152.58, 'XRP': 0.22692, 'NEO': 9.3751, 'EOS': 2.7715, 'BSV': 107.85, 'IOT': 0.21151}
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:56] "GET /api/data HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:56] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:56] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:56] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:01 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:01:56] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:02:16] "GET /main HTTP/1.1" 200 -
+11-30 23:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:02:16] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:02:16] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:02:16] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:02:16] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:02 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:02 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:02 bfx_data_server.api.getCoins INFO     {'BTC': 7597.7, 'LTC': 47.657, 'ETH': 152.58, 'XRP': 0.22692, 'NEO': 9.3751, 'EOS': 2.7715, 'BSV': 107.84, 'IOT': 0.21151}
+11-30 23:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:02:16] "GET /api/data HTTP/1.1" 200 -
+11-30 23:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:02:16] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:02:16] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:02:16] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:02 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:02:17] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:08] "GET /main HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:08] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:08] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:08] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:08] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:11 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:11 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:11 bfx_data_server.api.getCoins INFO     {'BTC': 7595, 'LTC': 47.663, 'ETH': 152.66, 'XRP': 0.22692, 'NEO': 9.375, 'EOS': 2.771, 'BSV': 107.91, 'IOT': 0.21163}
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:09] "GET /api/data HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:09] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:09] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:09] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:09] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:34] "GET /main HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:34] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:34] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:34] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:11 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:34] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:11 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:11 bfx_data_server.api.getCoins INFO     {'BTC': 7595, 'LTC': 47.653, 'ETH': 152.66, 'XRP': 0.22679, 'NEO': 9.375, 'EOS': 2.771, 'BSV': 107.92, 'IOT': 0.21163}
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:34] "GET /api/data HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:34] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:35] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:35] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:11 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:11:35] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:22] "GET /main HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:22] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:22] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:22] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:22] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:13 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:13 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:13 bfx_data_server.api.getCoins INFO     {'BTC': 7595, 'LTC': 47.646, 'ETH': 152.76, 'XRP': 0.22687, 'NEO': 9.375, 'EOS': 2.771, 'BSV': 107.86, 'IOT': 0.21182}
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:23] "GET /api/data HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:23] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:23] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:23] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:23] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:59] "GET /main HTTP/1.1" 200 -
+11-30 23:13 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:13:59] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:14:00] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:14:00] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:14:00] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:14 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:14 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:14 bfx_data_server.api.getCoins INFO     {'BTC': 7595, 'LTC': 47.652, 'ETH': 152.76, 'XRP': 0.22675, 'NEO': 9.375, 'EOS': 2.771, 'BSV': 107.83, 'IOT': 0.21213}
+11-30 23:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:14:00] "GET /api/data HTTP/1.1" 200 -
+11-30 23:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:14:00] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:14:00] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:14:00] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:14 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:14:00] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:15 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:15:25] "GET /main HTTP/1.1" 200 -
+11-30 23:15 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:15:25] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:15 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:15:25] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:15 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:15:25] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:15 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:15:25] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:15 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:15 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:15 bfx_data_server.api.getCoins INFO     {'BTC': 7595, 'LTC': 47.623, 'ETH': 152.76, 'XRP': 0.22668, 'NEO': 9.375, 'EOS': 2.771, 'BSV': 107.7, 'IOT': 0.21216}
+11-30 23:15 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:15:25] "GET /api/data HTTP/1.1" 200 -
+11-30 23:15 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:15:26] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:15 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:15:26] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:15 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:15:26] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:15 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:15:26] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:20] "GET /main HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:20] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:20] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:20] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:17 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:21] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:17 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:17 bfx_data_server.api.getCoins INFO     {'BTC': 7594.5, 'LTC': 47.623, 'ETH': 152.76, 'XRP': 0.22689, 'NEO': 9.375, 'EOS': 2.771, 'BSV': 107.79, 'IOT': 0.21216}
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:21] "GET /api/data HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:21] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:21] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:21] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:21] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:54] "GET /main HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:54] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:55] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:55] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:17 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:55] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:17 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:17 bfx_data_server.api.getCoins INFO     {'BTC': 7594.5, 'LTC': 47.647, 'ETH': 152.76, 'XRP': 0.22688, 'NEO': 9.3801, 'EOS': 2.771, 'BSV': 107.87, 'IOT': 0.21216}
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:55] "GET /api/data HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:55] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:55] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:55] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:17 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:17:55] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:28 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:28:59] "GET /main HTTP/1.1" 200 -
+11-30 23:28 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:28:59] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:28 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:28:59] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:28 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:28:59] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:29 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:29:00] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:29 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:29 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:29 bfx_data_server.api.getCoins INFO     {'BTC': 7593.7, 'LTC': 47.653, 'ETH': 153.02, 'XRP': 0.2265, 'NEO': 9.3852, 'EOS': 2.7712, 'BSV': 107.96, 'IOT': 0.21215}
+11-30 23:29 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:29:00] "GET /api/data HTTP/1.1" 200 -
+11-30 23:29 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:29:00] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:29 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:29:00] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:29 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:29:00] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:29 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:29:00] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:30:35] "GET /main HTTP/1.1" 200 -
+11-30 23:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:30:35] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:30:35] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:30:35] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:30:36] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:30 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:30 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:30 bfx_data_server.api.getCoins INFO     {'BTC': 7594.1, 'LTC': 47.637, 'ETH': 153.12, 'XRP': 0.22668, 'NEO': 9.3854, 'EOS': 2.7714, 'BSV': 107.97, 'IOT': 0.21215}
+11-30 23:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:30:36] "GET /api/data HTTP/1.1" 200 -
+11-30 23:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:30:36] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:30:36] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:30:36] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:30 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:30:36] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:41 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:41:27] "GET /main HTTP/1.1" 200 -
+11-30 23:41 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:41:27] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:41 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:41:28] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:41 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:41:28] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:41 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:41:28] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:41 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:41 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:41 bfx_data_server.api.getCoins INFO     {'BTC': 7611.7, 'LTC': 47.71, 'ETH': 153.15, 'XRP': 0.22752, 'NEO': 9.4069, 'EOS': 2.7773, 'BSV': 107.85, 'IOT': 0.21103}
+11-30 23:41 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:41:28] "GET /api/data HTTP/1.1" 200 -
+11-30 23:41 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:41:28] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:41 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:41:28] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:41 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:41:28] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:41 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:41:28] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:10] "GET /main HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:10] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:11] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:11] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:11] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:42 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:42 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:42 bfx_data_server.api.getCoins INFO     {'BTC': 7611.7, 'LTC': 47.734, 'ETH': 153.15, 'XRP': 0.22752, 'NEO': 9.4069, 'EOS': 2.7773, 'BSV': 107.92, 'IOT': 0.21103}
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:11] "GET /api/data HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:11] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:11] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:11] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:11] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:51] "GET /main HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:51] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:51] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:51] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:51] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:42 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:42 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:42 bfx_data_server.api.getCoins INFO     {'BTC': 7611.7, 'LTC': 47.708, 'ETH': 153.15, 'XRP': 0.22752, 'NEO': 9.4069, 'EOS': 2.7773, 'BSV': 107.88, 'IOT': 0.21103}
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:51] "GET /api/data HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:51] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:51] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:51] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+11-30 23:42 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:42:51] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:43 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:43:15] "GET /main HTTP/1.1" 200 -
+11-30 23:43 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:43:15] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:43 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:43:15] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:43 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:43:15] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:43 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:43:15] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:43 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:43 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:43 bfx_data_server.api.getCoins INFO     {'BTC': 7603.9, 'LTC': 47.683, 'ETH': 153.15, 'XRP': 0.22713, 'NEO': 9.4069, 'EOS': 2.7721, 'BSV': 107.77, 'IOT': 0.21103}
+11-30 23:43 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:43:16] "GET /api/data HTTP/1.1" 200 -
+11-30 23:43 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:43:16] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:43 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:43:16] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:43 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:43:16] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+11-30 23:43 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:43:16] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:44:51] "GET /main HTTP/1.1" 200 -
+11-30 23:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:44:51] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:44:52] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:44:52] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:44 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:44:52] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:44 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:44 bfx_data_server.api.getCoins INFO     {'BTC': 7603.9, 'LTC': 47.674, 'ETH': 153.15, 'XRP': 0.2272, 'NEO': 9.4146, 'EOS': 2.7727, 'BSV': 107.95, 'IOT': 0.21104}
+11-30 23:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:44:52] "GET /api/data HTTP/1.1" 200 -
+11-30 23:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:44:52] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:44:52] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+11-30 23:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:44:52] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:44 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:44:52] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+11-30 23:48 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:48:47] "GET /main HTTP/1.1" 200 -
+11-30 23:48 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:48:47] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+11-30 23:48 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:48:47] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+11-30 23:48 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:48:47] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+11-30 23:48 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:48:47] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+11-30 23:48 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+11-30 23:48 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+11-30 23:48 bfx_data_server.api.getCoins INFO     {'BTC': 7598.2, 'LTC': 47.616, 'ETH': 152.81, 'XRP': 0.22728, 'NEO': 9.3803, 'EOS': 2.7712, 'BSV': 107.85, 'IOT': 0.21108}
+11-30 23:48 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:48:48] "GET /api/data HTTP/1.1" 200 -
+11-30 23:48 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:48:48] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+11-30 23:48 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:48:48] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+11-30 23:48 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:48:48] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+11-30 23:48 werkzeug     INFO     127.0.0.1 - - [30/Nov/2019 23:48:48] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:02 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:02:42] "GET /main HTTP/1.1" 200 -
+12-01 00:02 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:02:42] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:02 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:02:42] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:02 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:02:42] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:02 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:02:42] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:02 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:02 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:02 bfx_data_server.api.getCoins INFO     {'BTC': 7600, 'LTC': 47.499, 'ETH': 152.23, 'XRP': 0.22682, 'NEO': 9.3855, 'EOS': 2.7639, 'BSV': 107.87, 'IOT': 0.21108}
+12-01 00:02 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:02:42] "GET /api/data HTTP/1.1" 200 -
+12-01 00:02 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:02:42] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:02 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:02:42] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:02 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:02:42] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:02 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:02:42] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:05 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:05:05] "GET /main HTTP/1.1" 200 -
+12-01 00:05 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:05:05] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:05 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:05:05] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:05 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:05:05] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:05 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:05 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:05:06] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:05 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:05 bfx_data_server.api.getCoins INFO     {'BTC': 7594.9, 'LTC': 47.307, 'ETH': 152.04, 'XRP': 0.22639, 'NEO': 9.3751, 'EOS': 2.7528, 'BSV': 107.77, 'IOT': 0.21108}
+12-01 00:05 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:05:06] "GET /api/data HTTP/1.1" 200 -
+12-01 00:05 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:05:06] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:05 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:05:06] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:05 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:05:06] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:05 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:05:07] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:06 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:06:47] "GET /main HTTP/1.1" 200 -
+12-01 00:06 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:06:47] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:06 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:06:47] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:06 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:06:47] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:06 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:06:47] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:06 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:06 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:06 bfx_data_server.api.getCoins INFO     {'BTC': 7587, 'LTC': 47.317, 'ETH': 151.8, 'XRP': 0.22635, 'NEO': 9.37, 'EOS': 2.7518, 'BSV': 108.07, 'IOT': 0.21104}
+12-01 00:06 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:06:48] "GET /api/data HTTP/1.1" 200 -
+12-01 00:06 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:06:48] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:06 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:06:48] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:06 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:06:48] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+12-01 00:06 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:06:48] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:29 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:29:18] "GET /main HTTP/1.1" 200 -
+12-01 00:29 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:29:18] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:29 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:29:18] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:29 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:29:18] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:29 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:29:19] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:29 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:29 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:29 bfx_data_server.api.getCoins INFO     {'BTC': 7535.9, 'LTC': 47.141, 'ETH': 151.29, 'XRP': 0.22565, 'NEO': 9.3471, 'EOS': 2.7456, 'BSV': 107.18, 'IOT': 0.21016}
+12-01 00:29 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:29:19] "GET /api/data HTTP/1.1" 200 -
+12-01 00:29 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:29:19] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:29 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:29:19] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:29 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:29:19] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:29 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:29:19] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:34 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:34:24] "GET /main HTTP/1.1" 200 -
+12-01 00:34 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:34:24] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:34 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:34:25] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:34 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:34:25] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:34 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:34 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:34:25] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:34 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:34 bfx_data_server.api.getCoins INFO     {'BTC': 7556.6, 'LTC': 47.244, 'ETH': 151.77, 'XRP': 0.22562, 'NEO': 9.3326, 'EOS': 2.7516, 'BSV': 107.29, 'IOT': 0.21044}
+12-01 00:34 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:34:25] "GET /api/data HTTP/1.1" 200 -
+12-01 00:34 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:34:25] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:34 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:34:25] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:34 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:34:25] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:34 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:34:25] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:49 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:49:59] "GET /main HTTP/1.1" 200 -
+12-01 00:49 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:49:59] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+12-01 00:49 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:49:59] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:49 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:49:59] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+12-01 00:49 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:49:59] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-01 00:49 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:49 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:49 bfx_data_server.api.getCoins INFO     {'BTC': 7540.4, 'LTC': 47.23, 'ETH': 151.46, 'XRP': 0.2251, 'NEO': 9.3278, 'EOS': 2.7534, 'BSV': 107.21, 'IOT': 0.21078}
+12-01 00:49 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:49:59] "GET /api/data HTTP/1.1" 200 -
+12-01 00:49 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:49:59] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:49 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:49:59] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:49 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:49:59] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:49 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:49:59] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:50 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:50:00] "GET /main HTTP/1.1" 200 -
+12-01 00:50 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:50:00] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:50 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:50:01] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:50 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:50:01] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:50 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:50:01] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:50 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:50 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:50 bfx_data_server.api.getCoins INFO     {'BTC': 7540.4, 'LTC': 47.227, 'ETH': 151.46, 'XRP': 0.2251, 'NEO': 9.3278, 'EOS': 2.7534, 'BSV': 107.19, 'IOT': 0.21078}
+12-01 00:50 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:50:01] "GET /api/data HTTP/1.1" 200 -
+12-01 00:50 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:50:01] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:50 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:50:01] "GET /static/dist/css/main.css.map HTTP/1.1" 304 -
+12-01 00:50 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:50:01] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+12-01 00:50 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:50:01] "GET /static/dist/js/main.js.map HTTP/1.1" 304 -
+12-01 00:51 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:51:37] "GET /main HTTP/1.1" 200 -
+12-01 00:51 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:51:37] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:51 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:51:37] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:51 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:51:37] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:51 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:51:38] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:51 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:51 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:51 bfx_data_server.api.getCoins INFO     {'BTC': 7541.5, 'LTC': 47.223, 'ETH': 151.42, 'XRP': 0.2251, 'NEO': 9.3252, 'EOS': 2.7498, 'BSV': 107.18, 'IOT': 0.21088}
+12-01 00:51 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:51:38] "GET /api/data HTTP/1.1" 200 -
+12-01 00:51 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:51:38] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:51 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:51:38] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:51 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:51:38] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:51 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:51:38] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:54 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:54:20] "GET /main HTTP/1.1" 200 -
+12-01 00:54 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:54:20] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:54 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:54:20] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:54 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:54:20] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:54 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:54 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:54:20] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:54 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:54 bfx_data_server.api.getCoins INFO     {'BTC': 7530.1, 'LTC': 47.193, 'ETH': 151.4, 'XRP': 0.2249, 'NEO': 9.3256, 'EOS': 2.7478, 'BSV': 107.01, 'IOT': 0.21088}
+12-01 00:54 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:54:20] "GET /api/data HTTP/1.1" 200 -
+12-01 00:54 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:54:20] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:54 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:54:20] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:54 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:54:20] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:54 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:54:21] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:55 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:55:02] "GET /main HTTP/1.1" 200 -
+12-01 00:55 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:55:02] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:55 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:55:02] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:55 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:55:02] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:55 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:55 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:55:03] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:55 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:55 bfx_data_server.api.getCoins INFO     {'BTC': 7530.1, 'LTC': 47.196, 'ETH': 151.46, 'XRP': 0.2248, 'NEO': 9.3256, 'EOS': 2.7474, 'BSV': 107.02, 'IOT': 0.21088}
+12-01 00:55 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:55:03] "GET /api/data HTTP/1.1" 200 -
+12-01 00:55 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:55:03] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:55 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:55:03] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:55 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:55:03] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:55 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:55:03] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:36] "GET /main HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:36] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:36] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:36] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:57 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:36] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:57 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:57 bfx_data_server.api.getCoins INFO     {'BTC': 7530.1, 'LTC': 47.16, 'ETH': 151.41, 'XRP': 0.22481, 'NEO': 9.3202, 'EOS': 2.7433, 'BSV': 107, 'IOT': 0.21088}
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:36] "GET /api/data HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:36] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:37] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:37] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:37] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:48] "GET /main HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:48] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:49] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:49] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:49] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:57 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:57 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:57 bfx_data_server.api.getCoins INFO     {'BTC': 7530.1, 'LTC': 47.141, 'ETH': 151.41, 'XRP': 0.2248, 'NEO': 9.3202, 'EOS': 2.7433, 'BSV': 107, 'IOT': 0.21088}
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:49] "GET /api/data HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:49] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:49] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:49] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:57 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:57:49] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:58 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:58:32] "GET /main HTTP/1.1" 200 -
+12-01 00:58 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:58:32] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:58 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:58:32] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:58 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:58:32] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:58 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:58 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:58:32] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:58 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:58 bfx_data_server.api.getCoins INFO     {'BTC': 7525.7, 'LTC': 47.13, 'ETH': 151.4, 'XRP': 0.22489, 'NEO': 9.3202, 'EOS': 2.7418, 'BSV': 107, 'IOT': 0.21088}
+12-01 00:58 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:58:32] "GET /api/data HTTP/1.1" 200 -
+12-01 00:58 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:58:32] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:58 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:58:32] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:58 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:58:32] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:58 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:58:32] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 00:59 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:59:15] "GET /main HTTP/1.1" 200 -
+12-01 00:59 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:59:15] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 200 -
+12-01 00:59 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:59:15] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 00:59 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:59:15] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 200 -
+12-01 00:59 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 00:59 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:59:15] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-01 00:59 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 00:59 bfx_data_server.api.getCoins INFO     {'BTC': 7524.6, 'LTC': 47.102, 'ETH': 151.48, 'XRP': 0.22489, 'NEO': 9.3202, 'EOS': 2.7439, 'BSV': 107.01, 'IOT': 0.21088}
+12-01 00:59 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:59:15] "GET /api/data HTTP/1.1" 200 -
+12-01 00:59 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:59:15] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 00:59 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:59:15] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 00:59 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:59:15] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 00:59 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 00:59:16] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 01:09 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:09:25] "GET /main HTTP/1.1" 200 -
+12-01 01:09 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:09:25] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+12-01 01:09 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:09:25] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 200 -
+12-01 01:09 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:09:25] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+12-01 01:09 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 01:09 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:09:25] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-01 01:09 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 01:09 bfx_data_server.api.getCoins INFO     {'BTC': 7499.9, 'LTC': 46.926, 'ETH': 150.91, 'XRP': 0.22495, 'NEO': 9.2702, 'EOS': 2.7387, 'BSV': 106.73, 'IOT': 0.20941}
+12-01 01:09 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:09:25] "GET /api/data HTTP/1.1" 200 -
+12-01 01:09 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:09:26] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 01:09 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:09:26] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 01:09 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:09:26] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 01:09 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:09:26] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 01:13 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:13:08] "GET /main HTTP/1.1" 200 -
+12-01 01:13 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:13:08] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+12-01 01:13 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:13:08] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 304 -
+12-01 01:13 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 01:13 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:13:08] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+12-01 01:13 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 01:13 bfx_data_server.api.getCoins INFO     {'BTC': 7477.6, 'LTC': 46.716, 'ETH': 150.4, 'XRP': 0.22436, 'NEO': 9.2695, 'EOS': 2.7341, 'BSV': 106.34, 'IOT': 0.2085}
+12-01 01:13 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:13:08] "GET /api/data HTTP/1.1" 200 -
+12-01 01:13 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:13:08] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-01 01:13 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:13:08] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 01:13 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:13:08] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 01:13 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:13:09] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 01:13 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:13:09] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-01 01:14 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:14:37] "GET /main HTTP/1.1" 200 -
+12-01 01:14 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:14:37] "GET /static/dist/css/main.css%3Fq%3D08101 HTTP/1.1" 304 -
+12-01 01:14 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:14:37] "GET /static/dist/js/bundle.js%3Fq%3Ddf8a2 HTTP/1.1" 304 -
+12-01 01:14 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-01 01:14 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:14:37] "GET /static/dist/js/main.js%3Fq%3Db565c HTTP/1.1" 304 -
+12-01 01:14 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-01 01:14 bfx_data_server.api.getCoins INFO     {'BTC': 7479.8, 'LTC': 46.764, 'ETH': 149.83, 'XRP': 0.2246, 'NEO': 9.2401, 'EOS': 2.7359, 'BSV': 106.31, 'IOT': 0.2085}
+12-01 01:14 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:14:37] "GET /api/data HTTP/1.1" 200 -
+12-01 01:14 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:14:37] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-01 01:14 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:14:37] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-01 01:14 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:14:37] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-01 01:14 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:14:37] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-01 01:14 werkzeug     INFO     127.0.0.1 - - [01/Dec/2019 01:14:37] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -

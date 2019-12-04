@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function () {
-  var navOffset = document.querySelector(".navbar").offsetHeight;
+  var navOffset = document.querySelector("#topnav").offsetHeight;
   var elems = document.querySelectorAll(".nav-link");
 
   function getHref(event) {

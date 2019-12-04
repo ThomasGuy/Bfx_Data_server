@@ -1,5 +1,5 @@
 import React from "react";
 import { render } from "react-dom";
-import CoinCase from "./components/CoinCase";
+import Router from "./components/Router";
 
-render(<CoinCase />, document.querySelector("#twg-coins"));
+render(<Router />, document.querySelector("#twg-coins"));

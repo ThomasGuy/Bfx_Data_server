@@ -29,6 +29,13 @@ const path = {
   js: {
     site: "bfx_data_server/server/static/src/js/site.js",
     src: "bfx_data_server/server/static/src/js/**/*.*",
+    vendor_bs: [
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/jquery/dist/jquery.min.map",
+    ],
+    vendor_rbs: "node_modules/react-bootstrap/dist/react-bootstrap.min.js",
     dest: `${buildDir}/js`,
   },
   img: {
@@ -43,7 +50,7 @@ const path = {
     },
   },
   html: {
-    src: "bfx_data_server/server/templates/**/*.html",
+    src: ["bfx_data_server/server/templates/*.html", "bfx_data_server/server/blueprints/**/*.html"],
   },
 };
 
@@ -73,6 +80,11 @@ function sassTask() {
     .pipe(cond(!PROD, sourcemaps.write(".")))
     .pipe(dest(path.scss.dest))
     .pipe(server.stream());
+}
+
+// JS vendor
+function moveJS() {
+  return src(path.js.vendor_bs).pipe(dest(path.js.dest));
 }
 
 // JS task: concatenates and uglifies JS files to script.js
@@ -128,6 +140,7 @@ const watchall = () =>
 module.exports.default = series(
   clean,
   mvFontAwesome,
+  moveJS,
   moveImg,
   parallel(sassTask, jsTask, buildReact),
   runServer,

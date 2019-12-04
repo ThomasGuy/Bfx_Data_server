@@ -1,14 +1,15 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-browser-router";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Dropdown from "react-bootstrap/Dropdown";
-import App from "./App";
+import CoinCase from "./CoinCase";
+import NotFound from "./NotFound";
 
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={Dropdown} />
-      <Route path="/main" component={App} />
+      <Route exact path="/" />
+      <Route path="/main" component={CoinCase} />
+      <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
 );

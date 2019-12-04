@@ -6,4 +6,4 @@ from . import bp
 @bp.route('/main')
 @login_required
 def main():
-    return render_template('main/main.html')
+    return render_template('main.html', title='Bitfinex Coins')

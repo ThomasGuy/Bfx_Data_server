@@ -1,7 +1,8 @@
 node_modules
 build/**
-app/static/**
-app/public/**
+bfx_data_server/server/static/dist/
+
+
 .vscode
 *.pyc
 __pycache__

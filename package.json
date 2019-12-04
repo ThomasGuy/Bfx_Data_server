@@ -6,9 +6,9 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development gulp",
     "prod": "cross-env NODE_ENV=production gulp",
-    "clean": "rm -rf bfx_server/public/** build/**",
+    "clean": "rm -rf bfx_server/server/static/dist/** build/**",
     "reinstall": "npm run clean & rm -rf node_modules; npm install",
-    "pystart": "concurrently --kill-others \"npm run start\" \"flask run\""
+    "pystart": "npm run clean; concurrently --kill-others \"npm run start\" \"flask run\""
   },
   "author": "tom",
   "license": "ISC",
@@ -19,13 +19,16 @@
     "Gulp"
   ],
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "bootstrap-scss": "^4.3.1",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
-    "react-browser-router": "^2.1.2",
     "react-dom": "^16.11.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
     "styled-components": "^4.4.1"
   },
   "devDependencies": {

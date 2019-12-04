@@ -11,6 +11,10 @@ class Config(object):
     HOST_NAME = 'localhost:5000'
     PORT = 5000
     SEND_FILE_MAX_AGE_DEFAULT = 0
+    CACHE_BUSTER={
+        'extensions':['.js', '.css', '.csv'],
+        'hash_size':5
+        }
 
 
 class DevConfig(Config):

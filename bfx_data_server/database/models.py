@@ -9,6 +9,7 @@ from sqlalchemy.ext.declarative import declarative_base, declared_attr
 # from flask_sqlalchemy_session import current_session as cs
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
+# from flask_sqlalchemy_session import current_session
 
 Base = declarative_base()
 

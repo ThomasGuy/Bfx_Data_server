@@ -1,7 +1,1 @@
-from flask import Blueprint
-
-
-bp = Blueprint('auth', __name__, template_folder='templates')
-
-
-from . import routes
+from bfx_data_server.server.blueprints.auth.routes import auth_bp

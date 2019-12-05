@@ -1,6 +1,8 @@
 from flask import render_template
 from flask_sqlalchemy_session import current_session
-from . import err
+from flask import Blueprint
+
+err = Blueprint('errors', __name__, template_folder='templates')
 
 
 @err.app_errorhandler(404)

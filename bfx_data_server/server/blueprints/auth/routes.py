@@ -1,22 +1,21 @@
 import logging
 
 # third party imports
-from flask import current_app
+from flask import current_app, Blueprint, render_template, redirect, url_for, flash, request
 from flask_sqlalchemy_session import current_session
-from flask import render_template, redirect, url_for, flash, request
 from werkzeug.urls import url_parse
 from flask_login import login_user, logout_user, current_user, login_required
 from .forms import LoginForm, RegistrationForm
 
 # package imports
-from . import bp
 from bfx_data_server.database.models import User
 
 
 log = logging.getLogger(__name__)
+auth_bp = Blueprint('auth', __name__, template_folder='templates')
 
 
-@bp.route('/login', methods=['GET', 'POST'])
+@auth_bp.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
         return redirect(url_for('main.main'))
@@ -34,14 +33,14 @@ def login():
     return render_template('login.html', title='Sign In', form=form)
 
 
-@bp.route('/logout')
+@auth_bp.route('/logout')
 @login_required
 def logout():
     logout_user()
     return redirect(url_for('home.home'))
 
 
-@bp.route('/register', methods=['GET', 'POST'])
+@auth_bp.route('/register', methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
         return redirect(url_for('main.main'))
@@ -56,7 +55,7 @@ def register():
     return render_template('register.html', title='Register', form=form)
 
 
-# @bp.route('/reset_password_request', methods=['GET', 'POST'])
+# @auth_bp.route('/reset_password_request', methods=['GET', 'POST'])
 # def reset_password_request():
 #     if current_user.is_authenticated:
 #         return redirect(url_for('main.index'))
@@ -72,7 +71,7 @@ def register():
 #                            title=_('Reset Password'), form=form)
 
 
-# @bp.route('/reset_password/<token>', methods=['GET', 'POST'])
+# @auth_bp.route('/reset_password/<token>', methods=['GET', 'POST'])
 # def reset_password(token):
 #     if current_user.is_authenticated:
 #         return redirect(url_for('main.index'))

@@ -132,10 +132,7 @@ function mvFontAwesome() {
 }
 
 const watchall = () =>
-  watch(
-    [path.scss.src, path.js.src, path.html.src],
-    series(parallel(sassTask, jsTask, buildReact), reload),
-  );
+  watch([path.scss.src, path.js.src], series(parallel(sassTask, jsTask, buildReact), reload));
 
 module.exports.default = series(
   clean,

@@ -1,261 +1,149 @@
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:25] "GET / HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:25] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:25] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:25] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:25] "GET /static/dist/js/main.js HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:25] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:25] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:25] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:32] "GET /auth/logout HTTP/1.1" 302 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:32] "GET / HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:32] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:32] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:32] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:32] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:32] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:32] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:32] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:36] "GET /auth/login HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:36] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:36] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:36] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:36] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:36] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:36] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:38] "POST /auth/login HTTP/1.1" 302 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:38] "GET /auth/login HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:38] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:38] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:38] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:38] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:38] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:38] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:44] "POST /auth/login HTTP/1.1" 302 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:44] "GET /main HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:44] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:44] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:44] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:44] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:44] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:44] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 08:56 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 08:56 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 08:56 bfx_data_server.api.getCoins INFO     {'BTC': 7372.8, 'LTC': 44.9, 'ETH': 146.63, 'XRP': 0.21689, 'NEO': 8.6706, 'EOS': 2.6773, 'BSV': 97.379, 'IOT': 0.20041}
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:44] "GET /api/data HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:51] "GET /main HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:51] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:51] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:51] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:52] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:52] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:52] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 08:56 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 08:56 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 08:56 bfx_data_server.api.getCoins INFO     {'BTC': 7372.8, 'LTC': 44.871, 'ETH': 146.62, 'XRP': 0.21685, 'NEO': 8.6706, 'EOS': 2.6773, 'BSV': 97.379, 'IOT': 0.2005}
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:52] "GET /api/data HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:53] "GET / HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:53] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:53] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:53] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:53] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:53] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:53] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:53] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:57] "GET /main HTTP/1.1" 200 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:57] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:57] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:57] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:57] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:57] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:57] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 08:56 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 08:56 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 08:56 bfx_data_server.api.getCoins INFO     {'BTC': 7372.8, 'LTC': 44.879, 'ETH': 146.62, 'XRP': 0.21689, 'NEO': 8.6706, 'EOS': 2.6773, 'BSV': 97.379, 'IOT': 0.20046}
-12-05 08:56 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 08:56:57] "GET /api/data HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:03] "GET /main HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:03] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:03] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:03] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:03] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:03] "GET /static/dist/js/main.js HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:03] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:12 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 10:12 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 10:12 bfx_data_server.api.getCoins INFO     {'BTC': 7362.3, 'LTC': 44.889, 'ETH': 146.79, 'XRP': 0.21693, 'NEO': 8.6834, 'EOS': 2.6826, 'BSV': 96.311, 'IOT': 0.20078}
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:04] "GET /api/data HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:35] "GET /auth/logout HTTP/1.1" 302 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:35] "GET / HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:35] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:35] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:35] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:35] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:35] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:35] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:35] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:38] "GET /main HTTP/1.1" 302 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:38] "GET /auth/login?next=%2Fmain HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:38] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:38] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:38] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:38] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:38] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:38] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:42] "POST /auth/login?next=%2Fmain HTTP/1.1" 302 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:42] "GET /auth/login HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:42] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:42] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:42] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:42] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:42] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:42] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:47] "POST /auth/login HTTP/1.1" 302 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:47] "GET /main HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:47] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:47] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:47] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:47] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:47] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:47] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:12 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 10:12 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 10:12 bfx_data_server.api.getCoins INFO     {'BTC': 7362.7, 'LTC': 44.899, 'ETH': 146.8, 'XRP': 0.21693, 'NEO': 8.6834, 'EOS': 2.6829, 'BSV': 96.311, 'IOT': 0.2008}
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:47] "GET /api/data HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:52] "GET /main HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:52] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:52] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:52] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:52] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:52] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:52] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:12 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 10:12 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 10:12 bfx_data_server.api.getCoins INFO     {'BTC': 7362.7, 'LTC': 44.882, 'ETH': 146.82, 'XRP': 0.21693, 'NEO': 8.6834, 'EOS': 2.6829, 'BSV': 96.311, 'IOT': 0.2008}
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:52] "GET /api/data HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:57] "GET /main HTTP/1.1" 200 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:57] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:57] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:57] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:58] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:58] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:58] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:12 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 10:12 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 10:12 bfx_data_server.api.getCoins INFO     {'BTC': 7362.7, 'LTC': 44.882, 'ETH': 146.82, 'XRP': 0.21693, 'NEO': 8.6834, 'EOS': 2.6829, 'BSV': 96.311, 'IOT': 0.2008}
-12-05 10:12 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:12:58] "GET /api/data HTTP/1.1" 200 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:01] "GET /main HTTP/1.1" 200 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:02] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:02] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:02] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:02] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:02] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:02] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:13 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 10:13 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 10:13 bfx_data_server.api.getCoins INFO     {'BTC': 7362.7, 'LTC': 44.882, 'ETH': 146.8, 'XRP': 0.21699, 'NEO': 8.6834, 'EOS': 2.6829, 'BSV': 96.311, 'IOT': 0.2008}
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:02] "GET /api/data HTTP/1.1" 200 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:21] "GET /main HTTP/1.1" 200 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:21] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:21] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:21] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:21] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:21] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:21] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:13 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 10:13 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 10:13 bfx_data_server.api.getCoins INFO     {'BTC': 7362.3, 'LTC': 44.883, 'ETH': 146.79, 'XRP': 0.21691, 'NEO': 8.6834, 'EOS': 2.6825, 'BSV': 96.311, 'IOT': 0.2008}
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:21] "GET /api/data HTTP/1.1" 200 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:34] "GET /main HTTP/1.1" 200 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:34] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:34] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:34] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:34] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:34] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:34] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:13 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 10:13 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 10:13 bfx_data_server.api.getCoins INFO     {'BTC': 7362.3, 'LTC': 44.872, 'ETH': 146.75, 'XRP': 0.21694, 'NEO': 8.6834, 'EOS': 2.6825, 'BSV': 96.311, 'IOT': 0.2008}
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:34] "GET /api/data HTTP/1.1" 200 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:46] "GET / HTTP/1.1" 200 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:46] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:46] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:46] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:46] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:46] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:46] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:13 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:13:46] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:00] "GET /main HTTP/1.1" 200 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:00] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:00] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:00] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:00] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:00] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:00] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:15 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 10:15 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 10:15 bfx_data_server.api.getCoins INFO     {'BTC': 7362.3, 'LTC': 44.889, 'ETH': 146.85, 'XRP': 0.21694, 'NEO': 8.6835, 'EOS': 2.6795, 'BSV': 96.316, 'IOT': 0.20091}
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:00] "GET /api/data HTTP/1.1" 200 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:05] "GET /auth/logout HTTP/1.1" 302 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:05] "GET / HTTP/1.1" 200 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:05] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:05] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:05] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:05] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:05] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:05] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:05] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:09] "GET /auth/register HTTP/1.1" 200 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:09] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:09] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:09] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:09] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:09] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:09] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:22] "POST /auth/register HTTP/1.1" 200 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:22] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:22] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:22] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:22] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:22] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:22] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:27] "GET /auth/register HTTP/1.1" 200 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:28] "GET / HTTP/1.1" 200 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:31] "GET /main HTTP/1.1" 302 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:31] "GET /auth/login?next=%2Fmain HTTP/1.1" 200 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:32] "GET / HTTP/1.1" 200 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:35] "GET / HTTP/1.1" 200 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:35] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:35] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:35] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:35] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:35] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:15 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:15:35] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:17 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:17:32] "GET / HTTP/1.1" 200 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:05] "GET / HTTP/1.1" 200 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:05] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:05] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:05] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:05] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:05] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:05] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:05] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:05] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:17] "GET /main HTTP/1.1" 302 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:17] "GET /auth/login?next=%2Fmain HTTP/1.1" 200 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:18] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:18] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:18] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:18] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:18] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:18] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:22] "POST /auth/login?next=%2Fmain HTTP/1.1" 302 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:22] "GET /main HTTP/1.1" 200 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:22] "GET /static/dist/css/main.css HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:22] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:22] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:22] "GET /static/dist/js/main.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:22] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:22] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
-12-05 10:18 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
-12-05 10:18 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
-12-05 10:18 bfx_data_server.api.getCoins INFO     {'BTC': 7368.1, 'LTC': 44.948, 'ETH': 146.89, 'XRP': 0.21695, 'NEO': 8.6931, 'EOS': 2.6803, 'BSV': 96.464, 'IOT': 0.20092}
-12-05 10:18 werkzeug     INFO     127.0.0.1 - - [05/Dec/2019 10:18:22] "GET /api/data HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:14] "GET / HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:14] "GET /static/dist/css/main.css HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:14] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:14] "GET /static/dist/js/jquery.min.js HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:14] "GET /static/dist/js/bundle.js HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:14] "GET /static/dist/js/main.js HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:14] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:14] "GET /static/dist/img/skyline.png HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:14] "GET /static/dist/img/favicon.ico HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET / HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /main HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:18] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 16:02 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-07 16:02 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-07 16:02 bfx_data_server.api.getCoins INFO     {'BTC': 7561.1, 'LTC': 45.848, 'ETH': 149.29, 'XRP': 0.22765, 'NEO': 9.1759, 'EOS': 2.7575, 'BSV': 97.054, 'IOT': 0.20645}
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:19] "GET /api/data HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:22] "GET / HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:22] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:22] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:22] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:22] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:22] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:22] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:22] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:26] "GET /main HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:26] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:26] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:26] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:26] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:26] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:26] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 16:02 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-07 16:02 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-07 16:02 bfx_data_server.api.getCoins INFO     {'BTC': 7561.1, 'LTC': 45.848, 'ETH': 149.29, 'XRP': 0.22764, 'NEO': 9.1667, 'EOS': 2.7575, 'BSV': 97.053, 'IOT': 0.20645}
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:26] "GET /api/data HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:27] "GET / HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:27] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:27] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:27] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:27] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:27] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:27] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:27] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:28] "GET /auth/logout HTTP/1.1" 302 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:28] "GET / HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:28] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:28] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:28] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:28] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:28] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:28] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:28] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:30] "GET /auth/login HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:31] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:31] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:31] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:31] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:31] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:31] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:36] "POST /auth/login HTTP/1.1" 302 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:36] "GET /auth/login HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:36] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:36] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:36] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:36] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:36] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:36] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:44] "POST /auth/login HTTP/1.1" 302 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:44] "GET /main HTTP/1.1" 200 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:44] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:44] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:44] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:44] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:44] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:44] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 16:02 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-07 16:02 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-07 16:02 bfx_data_server.api.getCoins INFO     {'BTC': 7559.9, 'LTC': 45.847, 'ETH': 149.07, 'XRP': 0.2276, 'NEO': 9.1673, 'EOS': 2.7575, 'BSV': 97.053, 'IOT': 0.20645}
+12-07 16:02 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:02:44] "GET /api/data HTTP/1.1" 200 -
+12-07 16:03 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:03:52] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 16:03 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:03:52] "GET /static/dist/js/bundle.js.map HTTP/1.1" 200 -
+12-07 16:03 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:03:52] "GET /static/dist/css/main.css.map HTTP/1.1" 200 -
+12-07 16:03 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 16:03:52] "GET /static/dist/js/bootstrap.bundle.js.map HTTP/1.1" 200 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:15] "GET / HTTP/1.1" 200 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:15] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:15] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:15] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:15] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:15] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:15] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:15] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:15] "GET /static/dist/css/main.css.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/js/bootstrap.bundle.js.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/js/main.js.map HTTP/1.1" 200 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /main HTTP/1.1" 200 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/css/main.css.map HTTP/1.1" 304 -
+12-07 17:00 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/js/bootstrap.bundle.js.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /static/dist/js/main.js.map HTTP/1.1" 304 -
+12-07 17:00 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-07 17:00 bfx_data_server.api.getCoins INFO     {'BTC': 7562.9, 'LTC': 45.65, 'ETH': 148.64, 'XRP': 0.2275, 'NEO': 9.112, 'EOS': 2.746, 'BSV': 96.778, 'IOT': 0.2061}
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:16] "GET /api/data HTTP/1.1" 200 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET / HTTP/1.1" 200 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/js/bootstrap.bundle.js.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/img/skyline.png HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/js/main.js.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:18] "GET /static/dist/css/main.css.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /main HTTP/1.1" 200 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /static/dist/css/main.css HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /static/dist/js/jquery.min.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /static/dist/img/TwgLogo.png HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /static/dist/js/bootstrap.bundle.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /static/dist/js/bundle.js HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /static/dist/js/main.js HTTP/1.1" 304 -
+12-07 17:00 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): api-pub.bitfinex.com:443
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /static/dist/js/bootstrap.bundle.js.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /static/dist/js/bundle.js.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /static/dist/js/main.js.map HTTP/1.1" 304 -
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /static/dist/css/main.css.map HTTP/1.1" 304 -
+12-07 17:00 urllib3.connectionpool DEBUG    https://api-pub.bitfinex.com:443 "GET /v2/tickers?symbols=tBTCUSD,tLTCUSD,tETHUSD,tXRPUSD,tNEOUSD,tEOSUSD,tBSVUSD,tIOTUSD HTTP/1.1" 200 None
+12-07 17:00 bfx_data_server.api.getCoins INFO     {'BTC': 7562.9, 'LTC': 45.65, 'ETH': 148.64, 'XRP': 0.2275, 'NEO': 9.112, 'EOS': 2.746, 'BSV': 96.778, 'IOT': 0.2061}
+12-07 17:00 werkzeug     INFO     127.0.0.1 - - [07/Dec/2019 17:00:19] "GET /api/data HTTP/1.1" 200 -

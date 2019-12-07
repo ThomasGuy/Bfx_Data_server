@@ -8,5 +8,6 @@ bfx_data_server/server/static/dist/
 __pycache__
 instance
 
+logs/bfx_ds
 .venv
 .env

@@ -8,4 +8,4 @@ main_bp = Blueprint('main', __name__, template_folder='templates')
 @main_bp.route('/main')
 @login_required
 def main():
-    return render_template('main.html', title='Bitfinex Coins')
+    return render_template('main.html', title='Bitfinex Coin')

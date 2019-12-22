@@ -54,23 +54,30 @@ const path = {
   },
 };
 
-const clean = () => del(["bfx_data_sever/server/static/dist/**/*", "build/**/*"]);
+const clean = () => {
+  return del(["bfx_data_sever/server/static/dist/**/*", "build/**/*"]);
+};
+
 const server = browserSync.create();
-const runServer = (resolve) => {
+
+const runServer = resolve => {
   server.init({
     proxy: {
       target: "localhost:5000",
       ws: true,
     },
   });
+
   resolve();
 };
-const reload = (none) => {
+
+const reload = none => {
   server.reload();
   none();
 };
 
 // Compile sass into CSS
+
 function sassTask() {
   return src(path.scss.src)
     .pipe(cond(!PROD, sourcemaps.init({ loadMaps: true })))
@@ -98,7 +105,9 @@ function jsTask() {
 }
 
 function buildReact() {
-  return src("./bfx_data_server/server/static/src/js/index.js", { sourcemaps: !PROD })
+  return src("./bfx_data_server/server/static/src/js/index.js", {
+    sourcemaps: !PROD,
+  })
     .pipe(
       bro({
         basedir: "./bfx_data_server/server/static/src/js/",
@@ -131,8 +140,12 @@ function mvFontAwesome() {
   return src([path.fonts.vendor.src, path.fonts.src]).pipe(dest(path.fonts.dest));
 }
 
-const watchall = () =>
-  watch([path.scss.src, path.js.src], series(parallel(sassTask, jsTask, buildReact), reload));
+const watchall = () => {
+  return watch(
+    [path.scss.src, path.js.src],
+    series(parallel(sassTask, jsTask, buildReact), reload),
+  );
+};
 
 module.exports.default = series(
   clean,

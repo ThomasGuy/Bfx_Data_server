@@ -1,1 +1,1 @@
-from bfx_data_server.server.blueprints.data.routes import data_bp
+from .routes import data_bp

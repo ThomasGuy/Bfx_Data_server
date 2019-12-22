@@ -1,18 +1,19 @@
 from flask import Flask
 from flask_sqlalchemy_session import flask_scoped_session
-# from flask_redis import FlaskRedis
 from flask_login import LoginManager
-# from flask_cachebuster import CacheBuster
+from flask_migrate import Migrate
+from flask_cache_buster import CacheBuster
 
-# package imports
-from bfx_data_server import session_factory
-# CACHE_BUSTER={'extensions':['.js', '.css', '.csv'],'hash_size':5}
-# cache_buster = CacheBuster(config=CACHE_BUSTER)
-
+cacheConfig = {
+     'extensions': ['.js', '.css', '.csv'],
+     'hash_size': 10
+}
 # initialize globals
-# redis_store = FlaskRedis()
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
+migrate = Migrate()
+buster = CacheBuster(config=cacheConfig)
+
 
 def create_app(Config):
     """
@@ -24,39 +25,31 @@ def create_app(Config):
     app.config.from_object(Config)
 
     with app.app_context():
-        # Set global values
-        # redis_store.endpoint = app.config['ENDPOINT']
-        # redis_store.post_query = app.config['POST_QUERY']
-        session = flask_scoped_session(session_factory, app)
-        # Initialize Plugins
+        # initialize plugins
         login_manager.init_app(app)
-        # cache_buster.init_app(app)
+        buster.register_cache_buster(app)
 
-        from bfx_data_server.database.models import User, Post
+        from bfx_data_server.database import session_factory, User, Post
+        session = flask_scoped_session(session_factory, app)
+        migrate.init_app(app, session)
+
+        from bfx_data_server.server.blueprints import home, auth, main, errors, data
+        app.register_blueprint(home.home_bp)
+        app.register_blueprint(auth.auth_bp, url_prefix='/auth')
+        app.register_blueprint(main.main_bp)
+        app.register_blueprint(errors.err, url_prefix='/error')
+        app.register_blueprint(data.data_bp)
+
         @login_manager.user_loader
         def load_user(id):
             return session.query(User).get(int(id))
-
-        from bfx_data_server.server.blueprints.home import home_bp
-        app.register_blueprint(home_bp)
-        from bfx_data_server.server.blueprints.auth import auth_bp
-        app.register_blueprint(auth_bp, url_prefix='/auth')
-        from bfx_data_server.server.blueprints.main import main_bp
-        app.register_blueprint(main_bp)
-        from bfx_data_server.server.blueprints.errors import err
-        app.register_blueprint(err, url_prefix='/error')
-        from bfx_data_server.server.blueprints.data import data_bp
-        app.register_blueprint(data_bp)
-
-
-        @app.teardown_request
-        def shutdown_session(exception=None):
-            session.remove()
 
         @app.shell_context_processor
         def make_shell_context():
             return {'session': session, 'User': User, 'Post': Post}
 
-    return app
+        @app.teardown_request
+        def shutdown_session(exception=None):
+            session.remove()
 
-from bfx_data_server.database import models
+    return app

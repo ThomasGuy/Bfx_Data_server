@@ -9,7 +9,7 @@ from .models import Base, User, Post
 
 
 log = logging.getLogger(__name__)
-dbPath = "sqlite:////c/data/sqlite/db/bfx_serverDB.db"
+dbPath = "sqlite:////c/data/sqlite/db/bfx_testDB.db"
 
 engine = create_engine(dbPath)
 if not database_exists(engine.url):

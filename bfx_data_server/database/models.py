@@ -1,15 +1,12 @@
 from datetime import datetime
 
-
 # third  party imports
 from sqlalchemy import Column, DateTime, Float, String, Integer, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.hybrid import hybrid_property, hybrid_method
 from sqlalchemy.ext.declarative import declarative_base, declared_attr
-# from flask_sqlalchemy_session import current_session as cs
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
-# from flask_sqlalchemy_session import current_session
 
 Base = declarative_base()
 

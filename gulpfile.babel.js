@@ -105,7 +105,7 @@ function jsTask() {
 }
 
 function buildReact() {
-  return src("./bfx_data_server/server/static/src/js/index.js", {
+  return src("./bfx_data_server/server/static/src/js/index.jsx", {
     sourcemaps: !PROD,
   })
     .pipe(

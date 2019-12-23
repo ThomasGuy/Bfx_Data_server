@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["index.js"],"sourcesContent":["import React from \"react\";\nimport { render } from \"react-dom\";\nimport Router from \"./components/Router\";\n\nrender(<Router />, document.querySelector(\"#twg-coins\"));\n"],"file":"bundle.js"}
+{"version":3,"names":[],"mappings":"","sources":["index.jsx"],"sourcesContent":["import React from \"react\";\nimport { render } from \"react-dom\";\nimport Router from \"./components/Router\";\n\nrender(<Router />, document.querySelector(\"#twg-coins\"));\n"],"file":"bundle.js"}

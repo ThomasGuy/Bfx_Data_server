@@ -1,5 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
-import Router from "./components/Router";
+import App from "./components/App";
 
-render(<Router />, document.querySelector("#twg-coins"));
+const el = document.getElementById("twgcoins");
+// eslint-disable-next-line react/jsx-props-no-spreading
+render(<App {...el.dataset} />, el);

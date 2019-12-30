@@ -1,25 +1,29 @@
 """Flask config class."""
 import os
-basedir = os.path.abspath(os.path.dirname(__file__))
+import redis
 
 
 class Config(object):
     """Base config vars."""
-    SECRET_KEY = os.getenv('SECRET_KEY') or 'secret'
     SESSION_COOKIE_NAME = os.getenv('SESSION_COOKIE_NAME') or 'cookie'
+    SECRET_KEY = os.getenv('SECRET_KEY')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    HOST_NAME = 'localhost:5000'
-    PORT = 5000
     SEND_FILE_MAX_AGE_DEFAULT = 0
     CACHE_BUSTER={
         'extensions':['.js', '.css', '.csv'],
         'hash_size':5
         }
 
+    # Flask-Session
+    SESSION_TYPE = os.getenv('SESSION_TYPE')
+    SESSION_REDIS =os.getenv('SESSION_REDIS')
+
 
 class DevConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = "sqlite:////c/data/sqlite/db/bfx_serverDB.db" or None
+    FLASK_APP = os.getenv('FLASK_APP')
+    FLASK_ENV = os.getenv('FLASK_ENV')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URI') or None
     print('development config set...')
 
 

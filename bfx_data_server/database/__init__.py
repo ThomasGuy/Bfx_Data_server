@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy_utils import database_exists, create_database
 
-from .models import Base, User, Post
+from .models import Base, User, Favourite
 
 
 log = logging.getLogger(__name__)

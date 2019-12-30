@@ -5,7 +5,7 @@ from pathlib import Path
 from bfx_data_server.database.models import Base
 
 
-path = Path('.').parent / 'logs'
+path = Path('.').parent / 'log'
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',

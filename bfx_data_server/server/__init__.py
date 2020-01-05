@@ -1,23 +1,29 @@
+'''
+    initialize flask from here
+'''
+# pylint: skip-file
 from flask import Flask
 from flask_sqlalchemy_session import flask_scoped_session
 from flask_login import LoginManager
 from flask_cache_buster import CacheBuster
+from flask_session import Session
+from flask_socketio import SocketIO
 
-cacheConfig = {
-     'extensions': ['.js', '.css', '.csv'],
-     'hash_size': 10
-}
+# cacheConfig = {
+#      'extensions': ['.js', '.css', '.csv'],
+#      'hash_size': 10
+# }
 # initialize globals
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
-buster = CacheBuster(config=cacheConfig)
+# buster = CacheBuster(config=cacheConfig)
 
 
 def create_app(Config):
     """
     Create Flask application using app factory pattern.
 
-    :return: Flask app, session
+    :return: Flask app
     """
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object(Config)
@@ -25,7 +31,7 @@ def create_app(Config):
     with app.app_context():
         # initialize plugins
         login_manager.init_app(app)
-        buster.register_cache_buster(app)
+        # buster.register_cache_buster(app)
 
         from bfx_data_server.database import session_factory, User, Favourite
         Session = flask_scoped_session(session_factory, app)
@@ -39,8 +45,10 @@ def create_app(Config):
         app.register_blueprint(api.api_v1)
 
         @login_manager.user_loader
-        def load_user(id):
-            return Session.query(User).get(int(id))
+        def load_user(user_id):
+            if user_id is not None:
+                return Session.query(User).get(int(user_id))
+            return None
 
         @app.shell_context_processor
         def make_shell_context():

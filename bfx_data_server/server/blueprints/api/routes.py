@@ -1,4 +1,4 @@
-from flask import Blueprint, session, jsonify
+from flask import Blueprint, session, jsonify, request
 from flask_sqlalchemy_session import current_session as cs
 from flask_login import login_required, current_user
 from flask_cors import CORS
@@ -9,14 +9,15 @@ api_v1 = Blueprint('API_v1', __name__, template_folder='templates')
 CORS(api_v1)
 
 
-@api_v1.route('/api/v1/userFavCoins', methods=['GET', 'POST'])
+@api_v1.route('/api/v1/favCoins', methods=['GET', 'POST'])
 @login_required
 def userData():
     '''
-        load users favourtie coins
+        load/save users favourtie coins
     '''
-    fav, *rest = cs.query(Favourite.coins).filter(Favourite.user_id == current_user.id)[0]
-    return jsonify(fav.split(','))
+    if request.method == 'GET':
+        fav, *rest = cs.query(Favourite.coins).filter(Favourite.user_id == current_user.id)[0]
+        return jsonify(fav.split(','))
 
 
 @api_v1.route('/api/v1/users/')

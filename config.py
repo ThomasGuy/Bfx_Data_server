@@ -1,6 +1,8 @@
-"""Flask config class."""
+"""
+    Flask config class.
+"""
 import os
-import redis
+# import redis
 
 
 class Config(object):
@@ -9,17 +11,18 @@ class Config(object):
     SECRET_KEY = os.getenv('SECRET_KEY')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SEND_FILE_MAX_AGE_DEFAULT = 0
-    CACHE_BUSTER={
+    CACHE_BUSTER = {
         'extensions':['.js', '.css', '.csv'],
         'hash_size':5
         }
 
     # Flask-Session
-    SESSION_TYPE = os.getenv('SESSION_TYPE')
-    SESSION_REDIS =os.getenv('SESSION_REDIS')
+    # SESSION_TYPE = os.getenv('SESSION_TYPE')
+    # SESSION_REDIS =os.getenv('SESSION_REDIS')
 
 
 class DevConfig(Config):
+    """ Flask development config """
     DEBUG = True
     FLASK_APP = os.getenv('FLASK_APP')
     FLASK_ENV = os.getenv('FLASK_ENV')
@@ -28,5 +31,6 @@ class DevConfig(Config):
 
 
 class ProdConfig(Config):
+    """ Flask propuction config """
     DEBUG = False
     DATABASE_URI = os.getenv('PROD_DATABASE_URI') or "sqlite:///:memory:"

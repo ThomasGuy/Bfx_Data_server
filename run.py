@@ -1,6 +1,13 @@
+"""
+    kick off socketio and flask server
+"""
+
+# package imports
 from bfx_data_server.server import create_app
+from bfx_data_server.api.bfx import bfx
 
 app = create_app('config.DevConfig')
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', load_dotenv=True, threaded=True)
+    bfx.ws.run()
+    app.run(load_dotenv=True)

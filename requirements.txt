@@ -1,11 +1,15 @@
 aiohttp==4.0.0a1
 alembic==1.3.2
+amqp==2.5.2
 astroid==2.3.3
 async-timeout==3.0.1
 asyncio==3.4.3
 attrs==19.3.0
 autopep8==1.4.4
-bitfinex-api-py==1.1.2
+billiard==3.6.1.0
+bitfinex-api-py==1.1.3
+blinker==1.4
+celery==4.4.0
 certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
@@ -15,7 +19,7 @@ Flask-Cache-Buster==1.0.1
 Flask-CacheBuster==1.0.0
 Flask-Cors==3.0.8
 Flask-Login==0.4.1
-Flask-Migrate==2.5.2
+Flask-Mail==0.9.1
 flask-redis==0.4.0
 Flask-Session==0.3.1
 Flask-SocketIO==4.2.1
@@ -26,6 +30,7 @@ idna==2.8
 isort==4.3.21
 itsdangerous==1.1.0
 Jinja2==2.10.3
+kombu==4.6.7
 lazy-object-proxy==1.4.3
 Mako==1.1.0
 MarkupSafe==1.1.1
@@ -40,6 +45,7 @@ python-dotenv==0.10.3
 python-editor==1.0.4
 python-engineio==3.11.1
 python-socketio==4.4.0
+pytz==2019.3
 redis==3.3.11
 requests==2.22.0
 retrying==1.3.3
@@ -48,6 +54,8 @@ SQLAlchemy==1.3.11
 SQLAlchemy-Utils==0.36.0
 typing-extensions==3.7.4.1
 urllib3==1.25.7
+uWSGI==2.0.18
+vine==1.3.0
 websockets==8.1
 Werkzeug==0.16.0
 wrapt==1.11.2

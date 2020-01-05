@@ -8,7 +8,7 @@
     "prod": "cross-env NODE_ENV=production gulp",
     "clean": "rm -rf bfx_server/server/static/dist/** build/**",
     "reinstall": "npm run clean & rm -rf node_modules; npm install",
-    "pystart": "npm run clean; concurrently --kill-others \"npm run start\" \"flask run\""
+    "pystart": "npm run clean; concurrently --kill-others \"npm run start\" \"python run.py\""
   },
   "author": "tom",
   "license": "ISC",

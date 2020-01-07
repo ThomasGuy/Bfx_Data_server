@@ -1,10 +1,16 @@
-from flask import render_template, redirect, url_for
-from flask_login import current_user
-from flask import Blueprint
+"""
+    flask home page routes
+"""
+from flask import render_template, Blueprint
+
 
 home_bp = Blueprint('home', __name__, template_folder='templates')
 
 
-@home_bp.route('/')
+@home_bp.route('/', methods=['GET'])
 def home():
-    return render_template('home.html', title='Welcome')
+
+    return render_template('home.html',
+                           title='Welcome',
+                           template='home-template',
+                           body='What is it good for')

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block nav %} {% include "_nav.html" %} {% endblock %}
+
+{% block content %}
+<!-- welcome -->
+<div class="container-fluid bg-mysite-lite mysite-section" id="session">
+
+    <div class="row">
+      <h1>Welcome Session</h1>
+      <p>This is our session variable...</p>
+      <p>{{ session_variable }}</p>
+    </div>
+
+</div>
+
+{% endblock %}

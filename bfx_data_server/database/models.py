@@ -1,10 +1,12 @@
-from datetime import datetime
+"""
+    ORM database tables
+"""
+# from datetime import datetime
 
 # third  party imports
-from sqlalchemy import Column, DateTime, Float, String, Integer, ForeignKey, ARRAY
+from sqlalchemy import Column, String, Integer, ForeignKey
 from sqlalchemy.orm import relationship
-from sqlalchemy.ext.hybrid import hybrid_property, hybrid_method
-from sqlalchemy.ext.declarative import declarative_base, declared_attr
+from sqlalchemy.ext.declarative import declarative_base
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -12,6 +14,7 @@ Base = declarative_base()
 
 
 class User(UserMixin, Base):
+    ''' ORM db table: User '''
     __tablename__ = 'users'
 
     id = Column(Integer(), primary_key=True)
@@ -31,10 +34,11 @@ class User(UserMixin, Base):
 
 
 class Favourite(Base):
+    ''' ORM db table: Persist User's favourite coins '''
     __tablename__ = 'favourites'
 
     id = Column(Integer, primary_key=True)
-    coins = Column('favCoins', String)
+    coins = Column(String)
     user_id = Column(Integer, ForeignKey('users.id'))
     users = relationship('User', back_populates='favourites')
 

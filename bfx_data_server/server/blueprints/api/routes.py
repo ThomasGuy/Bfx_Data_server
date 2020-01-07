@@ -44,4 +44,4 @@ def list_users():
         }
 
     '''
-    return jsonify('btc','ltc','xrp')
+    return jsonify('btc', 'ltc', 'xrp')

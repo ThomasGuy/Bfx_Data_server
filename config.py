@@ -1,8 +1,8 @@
 """
-    Flask config class.
+    Set Flask configuration vars from .env and .flaskenv files
 """
 import os
-# import redis
+import redis
 
 
 class Config(object):
@@ -17,8 +17,9 @@ class Config(object):
         }
 
     # Flask-Session
-    # SESSION_TYPE = os.getenv('SESSION_TYPE')
-    # SESSION_REDIS =os.getenv('SESSION_REDIS')
+    SESSION_TYPE = os.getenv('SESSION_TYPE')
+    SESSION_REDIS = redis.from_url(os.getenv('REDIS_LABS'))
+    # SESSION_REDIS = redis.from_url(os.getenv('REDIS_LOCAL'))
 
 
 class DevConfig(Config):

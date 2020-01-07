@@ -1,4 +1,7 @@
-from flask import Blueprint, session, jsonify, request
+"""
+    Flask route; api
+"""
+from flask import Blueprint, jsonify, request
 from flask_sqlalchemy_session import current_session as cs
 from flask_login import login_required, current_user
 from flask_cors import CORS

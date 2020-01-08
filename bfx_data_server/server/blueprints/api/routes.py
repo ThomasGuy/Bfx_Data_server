@@ -19,7 +19,7 @@ def userData():
         load/save users favourtie coins
     '''
     if request.method == 'GET':
-        fav, *rest = cs.query(Favourite.coins).filter(Favourite.user_id == current_user.id)[0]
+        fav, = cs.query(Favourite.coins).filter(Favourite.user_id == current_user.id)[0]
         return jsonify(fav.split(','))
 
 

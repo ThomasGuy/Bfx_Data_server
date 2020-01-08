@@ -4,7 +4,7 @@
 from flask import Blueprint
 from flask_login import login_required
 
-from bfx_data_server.api.getCoins import getCoins
+from bfx_data_server.server.blueprints.api.getCoins import getCoins
 
 data_bp = Blueprint('data', __name__)
 

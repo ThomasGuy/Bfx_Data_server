@@ -5,26 +5,23 @@
 from flask import Flask
 from flask_sqlalchemy_session import flask_scoped_session
 from flask_login import LoginManager
-from flask_cache_buster import CacheBuster
 from flask_session import Session
-# from flask_socketio import SocketIO
 
-# cacheConfig = {
-#      'extensions': ['.js', '.css', '.csv'],
-#      'hash_size': 10
-# }
+# package imports
+from bfx_data_server.server.blueprints.myEvents.events import sockio
+
+
 # initialize globals
 login_manager = LoginManager()
 login_manager.login_view = 'author.login'  # name of blueprint.route
 sesh = Session()
-# buster = CacheBuster(config=cacheConfig)
 
 
 def create_app(Config):
     """
     Create Flask application using app factory pattern.
 
-    :return: Flask app
+    :return: Flask app, SocketIO sockio
     """
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object(Config)
@@ -34,7 +31,8 @@ def create_app(Config):
     Session = flask_scoped_session(session_factory, app)
     login_manager.init_app(app)
     sesh.init_app(app)
-    # buster.register_cache_buster(app)
+    sockio.init_app(app, manage_session=False)
+
 
     with app.app_context():
         from bfx_data_server.server.blueprints import home, auth, main, errors, data, api
@@ -43,7 +41,7 @@ def create_app(Config):
         app.register_blueprint(main.main_bp)
         app.register_blueprint(errors.err, url_prefix='/error')
         app.register_blueprint(data.data_bp)
-        app.register_blueprint(api.api_v1)
+        app.register_blueprint(api.api_v1, url_perfix='/api_v1')
 
         @login_manager.user_loader
         def load_user(user_id):
@@ -59,4 +57,4 @@ def create_app(Config):
         def shutdown_session(exception=None):
             Session.remove()
 
-    return app
+    return app, sockio

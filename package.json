@@ -13,6 +13,8 @@
   "author": "tom",
   "license": "ISC",
   "keywords": [
+    "Bitfinex-api-py",
+    "Flask-SocketIO",
     "React",
     "Bootstrap",
     "Flask",

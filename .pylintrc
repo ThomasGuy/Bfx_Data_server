@@ -14,5 +14,6 @@ disable=too-few-public-methods,
         unidiomatic-typecheck,
         missing-function-docstring,
         unused_variable,
+        unused_import,
 
 ignore=tests,websockets,rest,utils

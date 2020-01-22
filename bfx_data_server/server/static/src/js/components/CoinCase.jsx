@@ -5,9 +5,7 @@ import React from "react";
 // import PropTypes from "prop-types";
 import CoinBox from "./CoinBox";
 
-function CoinCase({ props, coins, favCoins }) {
-  const { username } = props;
-  // const favCoins;
+function CoinCase({ coins, favCoins }) {
   const coinlist = Object.entries(coins).map(([key, value]) => {
     return (
       <li key={key}>
@@ -25,7 +23,6 @@ function CoinCase({ props, coins, favCoins }) {
 
   return (
     <>
-      <h3>Welcome {username}</h3>
       <div className='favlist'>
         <ul>{favlist}</ul>
       </div>

@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["index.jsx"],"sourcesContent":["import React from \"react\";\nimport { render } from \"react-dom\";\nimport App from \"./components/App\";\n\nconst el = document.getElementById(\"twgcoins\");\n// eslint-disable-next-line react/jsx-props-no-spreading\nrender(<App {...el.dataset} />, el);\n"],"file":"bundle.js"}

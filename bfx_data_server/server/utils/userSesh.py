@@ -9,7 +9,7 @@ from bfx_data_server.database.models import Favourite
 
 
 def userSesh():
-    ''' Load up the usr session '''
+    ''' Load up the user session '''
     fav, = db.query(Favourite.coins).filter(Favourite.user_id == current_user.id).first()
     session['favCoins'] = fav.split(',')
     session['name'] = current_user.username

@@ -6,6 +6,7 @@ from flask import Flask
 from flask_sqlalchemy_session import flask_scoped_session
 from flask_login import LoginManager
 from flask_session import Session
+from flask_cors import CORS
 
 # package imports
 from bfx_data_server.server.blueprints.myEvents.events import sockio
@@ -25,6 +26,7 @@ def create_app(Config):
     """
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object(Config)
+    CORS(app, resources={r"/api/*": {"origins": "*"}})
 
     # initialize plugins
     from bfx_data_server.database import session_factory, User, Favourite
@@ -53,7 +55,7 @@ def create_app(Config):
         def make_shell_context():
             return {'Session': Session, 'User': User, 'Favourite': Favourite}
 
-        @app.teardown_request
+        @app.teardown_appcontext
         def shutdown_session(exception=None):
             Session.remove()
 

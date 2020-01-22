@@ -1,6 +1,6 @@
 node_modules
 build/**
-bfx_data_server/server/static/dist/
+bfx_data_server/server/static/dist/**/*.*
 
 
 .vscode
@@ -12,3 +12,7 @@ log/
 debug.log
 venv
 .env
+
+bundle.js
+main.css
+dist/

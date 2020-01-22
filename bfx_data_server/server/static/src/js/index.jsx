@@ -1,10 +1,10 @@
 import React from "react";
 import { render } from "react-dom";
-import App from "./components/App";
-// import Conn from "./components/Conn";
+import io from "socket.io-client";
+// import App from "./components/App";
+import Test from "./components/Test";
 
-const el = document.getElementById("twgcoins");
-// eslint-disable-next-line react/jsx-props-no-spreading
-render(<App {...el.dataset} />, el);
+const socket = io("ws://localhost:5000/main");
 
-// render(<Conn />, document.getElementById("youwelcome"));
+// render(<App socket={socket} />, document.getElementById("twgcoins"));
+render(<Test socket={socket} />, document.getElementById("twgsession"));

@@ -15,10 +15,10 @@ def main():
     return render_template('main.html', title='Bitfinex Coin')
 
 
-@main_bp.route('/main/session', methods=['GET'])
+@main_bp.route('/main/test', methods=['GET', 'POST', 'PUT'])
 @login_required
-def session_view():
-    return render_template('session.html',
-                           title='Flask-Session Tutorial.',
-                           template='session-template',
-                           session_variable=str(session['redis-test']))
+def test_view():
+    return render_template('test.html',
+                           title='Flask-Session',
+                           template='test-template',
+                           session_variable=str(session['name']))

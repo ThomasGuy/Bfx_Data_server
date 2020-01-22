@@ -24,7 +24,7 @@ const buildDir = PROD ? "build" : "bfx_data_server/server/static/dist";
 const path = {
   scss: {
     src: "bfx_data_server/server/static/src/styles/**/*.scss",
-    dest: `${buildDir}/css`
+    dest: `${buildDir}/css`,
   },
   js: {
     site: "bfx_data_server/server/static/src/js/site.js",
@@ -33,25 +33,25 @@ const path = {
       "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
       "node_modules/bootstrap/dist/js/bootstrap.bundle.js.map",
       "node_modules/jquery/dist/jquery.min.js",
-      "node_modules/jquery/dist/jquery.min.map"
+      "node_modules/jquery/dist/jquery.min.map",
     ],
     vendor_rbs: "node_modules/react-bootstrap/dist/react-bootstrap.min.js",
-    dest: `${buildDir}/js`
+    dest: `${buildDir}/js`,
   },
   img: {
     src: "bfx_data_server/server/static/src/img/**/*",
-    dest: `${buildDir}/img`
+    dest: `${buildDir}/img`,
   },
   fonts: {
     src: "bfx_data_server/server/static/src/fonts/*",
     dest: `${buildDir}/fonts`,
     vendor: {
-      src: "node_modules/font-awesome/fonts/*"
-    }
+      src: "node_modules/font-awesome/fonts/*",
+    },
   },
   html: {
-    src: ["bfx_data_server/server/templates/*.html", "bfx_data_server/server/blueprints/**/*.html"]
-  }
+    src: ["bfx_data_server/server/templates/*.html", "bfx_data_server/server/blueprints/**/*.html"],
+  },
 };
 
 const clean = () => {
@@ -64,8 +64,8 @@ const runServer = resolve => {
   server.init({
     proxy: {
       target: "localhost:5000",
-      ws: true
-    }
+      ws: true,
+    },
   });
 
   resolve();
@@ -106,15 +106,15 @@ function jsTask() {
 
 function buildReact() {
   return src("./bfx_data_server/server/static/src/js/index.jsx", {
-    sourcemaps: !PROD
+    sourcemaps: !PROD,
   })
     .pipe(
       bro({
         basedir: "./bfx_data_server/server/static/src/js/",
         extensions: [".js", ".jsx"],
         debug: !PROD,
-        transform: [babelify]
-      })
+        transform: [babelify],
+      }),
     )
     .pipe(rename("bundle.js"))
     .pipe(cond(PROD, buffer())) // Stream files
@@ -129,9 +129,9 @@ function moveImg() {
       cond(
         PROD,
         imagemin({
-          verbose: true
-        })
-      )
+          verbose: true,
+        }),
+      ),
     )
     .pipe(dest(path.img.dest));
 }
@@ -143,7 +143,7 @@ function mvFontAwesome() {
 const watchall = () => {
   return watch(
     [path.scss.src, path.js.src],
-    series(parallel(sassTask, jsTask, buildReact), reload)
+    series(parallel(sassTask, jsTask, buildReact), reload),
   );
 };
 
@@ -154,5 +154,5 @@ module.exports.default = series(
   moveImg,
   parallel(sassTask, jsTask, buildReact),
   runServer,
-  watchall
+  watchall,
 );

@@ -3,18 +3,17 @@
 """
 import logging
 # import json
-
-from flask_socketio import SocketIO, emit
 from flask import request
+from flask_socketio import SocketIO, emit
 
 
 log = logging.getLogger(__name__)
 sockio = SocketIO()
 
 
-@sockio.on('connect')
+@sockio.on('connect', namespace='/main/test')
 def test_connected():
-    emit('my response', {'data': 'Connected'})
+    emit('my_response', {'data': 'Well Connected'})
     log.info(f"socketio: {request.sid} connected")
 
 
@@ -24,18 +23,12 @@ def test_disconnect():
     log.info(f"socketio: {request.sid} disconnected")
 
 
-@sockio.on('message', namespace='/api/test')
+@sockio.on('message')
 def messsage_handler(msg):
-    emit('my response', {'data': msg['data']})
+    # emit('my_response', {'data': 'got it'})
+    print(msg)
 
 
-@sockio.on('ticker_update')
-def handle_ticker_update(json):
-    emit('ticker_update', {'delta': 255})
-    log.info(f'ticker_update_event: {str(json)}')
-
-
-@sockio.on('event')
-def handle_event(json):
-    emit('Ahoy there', {'data': 42})
-    log.info(f'Event', str(json))
+@sockio.on('json')
+def handle_json(json):
+    print('received json: ' + str(json))

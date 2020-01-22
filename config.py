@@ -18,6 +18,7 @@ class Config(object):
         'extensions':['.js', '.css', '.csv'],
         'hash_size':5
         }
+    CORS_HEADERS = 'Content-Type'
 
     # Flask-Session
     SESSION_TYPE = os.getenv('SESSION_TYPE')

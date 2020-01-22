@@ -1,40 +1,44 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/prop-types */
-/* eslint-disable react/state-in-constructor */
 import React from "react";
 
 class Test extends React.Component {
   constructor(props) {
     super(props);
+    this.socket = props.socket;
     this.state = {
-      message: false,
-      response: {},
+      coindata: [],
+      symbol: "coin",
     };
   }
 
   componentDidMount() {
-    const { socket } = this.props;
-    socket.on("connect", () => {
-      console.log("connected");
+    this.socket.on("connect", () => {
+      console.log("Socket Connected");
     });
-    socket.on("event", data => {
-      // console.log('Got data:', data.symbol);
-      this.setState({
-        response: data,
-        message: data.symbol,
-      });
+    this.socket.on("ticker event", data => {
+      console.log("I got one!");
+      if (data.symbol === "tBSVUSD") {
+        this.setState({
+          coindata: data.data,
+          symbol: data.symbol,
+        });
+      }
     });
-    socket.on("disconnect", () => {
-      console.log("Disconnect to server");
+    this.socket.on("disconnect", () => {
+      console.log("Disconnected server");
     });
   }
 
   render() {
-    const { response, message } = this.state;
+    const { coindata, symbol } = this.state;
     return (
       <div className='sport'>
         <h1>Testing</h1>
-        <h3>{message}</h3>
-        <h4>{response.data}</h4>
+
+        <h4>
+          {symbol.slice(1, 4)} -- ${coindata[0]}
+        </h4>
       </div>
     );
   }

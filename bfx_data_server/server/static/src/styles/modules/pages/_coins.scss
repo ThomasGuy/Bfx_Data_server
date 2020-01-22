@@ -2,3 +2,34 @@
   font-size: 2rem;
   color: rgb(87, 211, 87);
 }
+#coins {
+
+  background-color: blue;
+}
+.sidebar {
+  color: aliceblue;
+  flex: 0 0 350px;
+  height: 790px;
+}
+
+.box {
+  background-color: coral;
+  margin: 5px 0;
+}
+
+.graph {
+  background-color: coral;
+  height: 512px;
+}
+
+.coin_title {
+  height: 85px;
+}
+
+.coin_list {
+  height: 400px;
+}
+
+.balance {
+  height: 280px;
+ }

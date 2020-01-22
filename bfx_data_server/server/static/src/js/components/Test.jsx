@@ -17,8 +17,8 @@ class Test extends React.Component {
       console.log("Socket Connected");
     });
     this.socket.on("ticker event", data => {
-      console.log("I got one!");
       if (data.symbol === "tBSVUSD") {
+        console.log("I got one!");
         this.setState({
           coindata: data.data,
           symbol: data.symbol,

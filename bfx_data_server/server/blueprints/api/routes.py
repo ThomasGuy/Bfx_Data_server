@@ -2,10 +2,8 @@
     Flask route; api
 """
 from flask import Blueprint, jsonify, request, session
-from flask_login import login_required, current_user
+from flask_login import login_required
 
-
-from bfx_data_server.database.models import Favourite
 
 api_v1 = Blueprint('API_v1', __name__, template_folder='templates')
 

@@ -1,35 +1,57 @@
-.favlist {
-  font-size: 2rem;
-  color: rgb(87, 211, 87);
-}
-#coins {
 
-  background-color: blue;
+.box {
+  background-color: coral;
+  margin: 5px 0;
 }
 .sidebar {
   color: aliceblue;
   flex: 0 0 350px;
   height: 790px;
 }
-
-.box {
-  background-color: coral;
-  margin: 5px 0;
+// --------------  Tickers   ------------------
+.coin_box {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+  }
+  height: 400px;
 }
 
-.graph {
-  background-color: coral;
-  height: 512px;
+.coin-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+}
+
+.tickerbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(184, 92, 92);
+  margin: 2px 0;
+  padding: 3px 10px;
+  input[type="checkbox"] {
+    vertical-align:middle;
+  }
+}
+
+.active {
+  background: rgb(97, 48, 48)!important;
 }
 
 .coin_title {
   height: 85px;
 }
 
-.coin_list {
-  height: 400px;
-}
-
 .balance {
   height: 280px;
- }
+}
+
+//  ------------------   Candle Area   --------------------
+.graph {
+  background-color: coral;
+  height: 512px;
+}

@@ -1,5 +1,9 @@
-import React from "react";
+import React from 'react';
 
-export default function CoinInfo() {
-  return <p>Coin Info</p>;
+export default function CoinInfo({ coins, active }) {
+  return (
+    <p>
+      {active}: {coins[active]}
+    </p>
+  );
 }

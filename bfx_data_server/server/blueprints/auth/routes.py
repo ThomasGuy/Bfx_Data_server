@@ -55,7 +55,7 @@ def register():
         user.set_password(form.password.data)
         db.add(user)
         newuser = db.query(User).filter_by(username=form.username.data).first()
-        fav = Favourite(user_id=newuser.id, coins='btc')
+        fav = Favourite(user_id=newuser.id, coins='BTC')
         db.add(fav)
         db.commit()
         flash(f'Congratulations, you are now a registered user! {user.id}')

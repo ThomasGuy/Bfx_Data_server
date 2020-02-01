@@ -1,61 +1,61 @@
-import { src, dest, watch, series, parallel } from "gulp";
-import sourcemaps from "gulp-sourcemaps";
-import babel from "gulp-babel";
-import sass from "gulp-sass";
-import concat from "gulp-concat";
-import uglify from "gulp-uglify";
-import postcss from "gulp-postcss";
-import autoprefixer from "autoprefixer";
-import del from "del";
-import imagemin from "gulp-imagemin";
-import cssnano from "cssnano";
-import browserSync from "browser-sync";
-import cond from "gulp-cond";
-import cleanCSS from "gulp-clean-css";
-import babelify from "babelify";
-import bro from "gulp-bro";
-import rename from "gulp-rename";
-import buffer from "vinyl-buffer";
+import { src, dest, watch, series, parallel } from 'gulp';
+import sourcemaps from 'gulp-sourcemaps';
+import babel from 'gulp-babel';
+import sass from 'gulp-sass';
+import concat from 'gulp-concat';
+import uglify from 'gulp-uglify';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+import del from 'del';
+import imagemin from 'gulp-imagemin';
+import cssnano from 'cssnano';
+import browserSync from 'browser-sync';
+import cond from 'gulp-cond';
+import cleanCSS from 'gulp-clean-css';
+import babelify from 'babelify';
+import bro from 'gulp-bro';
+import rename from 'gulp-rename';
+import buffer from 'vinyl-buffer';
 
-sass.compiler = require("node-sass");
+sass.compiler = require('node-sass');
 
-const PROD = process.env.NODE_ENV === "production";
-const buildDir = PROD ? "build" : "bfx_data_server/server/static/dist";
+const PROD = process.env.NODE_ENV === 'production';
+const buildDir = PROD ? 'build' : 'bfx_data_server/server/static/dist';
 const path = {
   scss: {
-    src: "bfx_data_server/server/static/src/styles/**/*.scss",
+    src: 'bfx_data_server/server/static/src/styles/**/*.scss',
     dest: `${buildDir}/css`,
   },
   js: {
-    site: "bfx_data_server/server/static/src/js/site.js",
-    src: "bfx_data_server/server/static/src/js/**/*.*",
+    site: 'bfx_data_server/server/static/src/js/site.js',
+    src: 'bfx_data_server/server/static/src/js/**/*.*',
     vendor_bs: [
-      "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
-      "node_modules/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "node_modules/jquery/dist/jquery.min.js",
-      "node_modules/jquery/dist/jquery.min.map",
+      'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+      'node_modules/bootstrap/dist/js/bootstrap.bundle.js.map',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/jquery/dist/jquery.min.map',
     ],
-    vendor_rbs: "node_modules/react-bootstrap/dist/react-bootstrap.min.js",
+    vendor_rbs: 'node_modules/react-bootstrap/dist/react-bootstrap.min.js',
     dest: `${buildDir}/js`,
   },
   img: {
-    src: "bfx_data_server/server/static/src/img/**/*",
+    src: 'bfx_data_server/server/static/src/img/**/*',
     dest: `${buildDir}/img`,
   },
   fonts: {
-    src: "bfx_data_server/server/static/src/fonts/*",
+    src: 'bfx_data_server/server/static/src/fonts/*',
     dest: `${buildDir}/fonts`,
     vendor: {
-      src: "node_modules/font-awesome/fonts/*",
+      src: 'node_modules/font-awesome/fonts/*',
     },
   },
   html: {
-    src: ["bfx_data_server/server/templates/*.html", "bfx_data_server/server/blueprints/**/*.html"],
+    src: ['bfx_data_server/server/templates/*.html', 'bfx_data_server/server/blueprints/**/*.html'],
   },
 };
 
 const clean = () => {
-  return del(["bfx_data_sever/server/static/dist/**/*", "build/**/*"]);
+  return del(['bfx_data_sever/server/static/dist/**/*', 'build/**/*']);
 };
 
 const server = browserSync.create();
@@ -63,7 +63,7 @@ const server = browserSync.create();
 const runServer = resolve => {
   server.init({
     proxy: {
-      target: "localhost:5000",
+      target: 'localhost:5000',
       ws: true,
     },
   });
@@ -77,16 +77,15 @@ const reload = none => {
 };
 
 // Compile sass into CSS
-
 function sassTask() {
   return src(path.scss.src)
     .pipe(cond(!PROD, sourcemaps.init({ loadMaps: true })))
-    .pipe(sass().on("error", sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(cond(PROD, postcss([autoprefixer(), cssnano()])))
-    .pipe(cond(!PROD, sourcemaps.write(".")))
-    .pipe(dest(path.scss.dest))
-    .pipe(server.stream());
+    .pipe(cond(!PROD, sourcemaps.write('.')))
+    .pipe(dest(path.scss.dest));
+  // .pipe(server.stream());
 }
 
 // JS vendor
@@ -99,28 +98,28 @@ function jsTask() {
   return src(path.js.site, { sourcemaps: !PROD })
     .pipe(babel())
     .pipe(cond(PROD, uglify()))
-    .pipe(cond(PROD, concat("main.min.js"), concat("main.js")))
-    .pipe(dest(path.js.dest, { sourcemaps: "." }))
-    .pipe(server.stream());
+    .pipe(cond(PROD, concat('main.min.js'), concat('main.js')))
+    .pipe(dest(path.js.dest, { sourcemaps: '.' }));
+  // .pipe(server.stream());
 }
 
 function buildReact() {
-  return src("./bfx_data_server/server/static/src/js/index.jsx", {
+  return src('./bfx_data_server/server/static/src/js/index.jsx', {
     sourcemaps: !PROD,
   })
     .pipe(
       bro({
-        basedir: "./bfx_data_server/server/static/src/js/",
-        extensions: [".js", ".jsx"],
+        basedir: './bfx_data_server/server/static/src/js/',
+        extensions: ['.js', '.jsx'],
         debug: !PROD,
         transform: [babelify],
       }),
     )
-    .pipe(rename("bundle.js"))
+    .pipe(rename('bundle.js'))
     .pipe(cond(PROD, buffer())) // Stream files
     .pipe(cond(PROD, uglify()))
-    .pipe(dest(path.js.dest, { sourcemaps: "." }))
-    .pipe(server.stream());
+    .pipe(dest(path.js.dest, { sourcemaps: '.' }));
+  // .pipe(server.stream());
 }
 
 function moveImg() {
@@ -153,6 +152,6 @@ module.exports.default = series(
   moveJS,
   moveImg,
   parallel(sassTask, jsTask, buildReact),
-  runServer,
+  // runServer,
   watchall,
 );

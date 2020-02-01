@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 import Sidebar from './sidebar/Sidebar';
 import Graph from './graph/Graph';
@@ -26,8 +26,11 @@ const updateCheckbox = boxes => {
 };
 
 export default function App({ socket }) {
+  const canvasRef = useRef(null);
   const [favourite, setFavourite] = useState([]);
   const [active, setActive] = useState('BTC');
+  const [candle, setCandle] = useState([]);
+
   useEffect(() => {
     fetch('/api/v1/favCoins')
       .then(res => res.json())
@@ -37,6 +40,13 @@ export default function App({ socket }) {
       })
       .catch(() => console.log('Error'));
   }, []);
+
+  useEffect(() => {
+    fetch('/api/v1/candles')
+      .then(res => res.json())
+      .then(res => setCandle(res))
+      .catch(() => console.log('Error'));
+  }, [canvasRef]);
 
   return (
     <div className='row'>
@@ -51,7 +61,7 @@ export default function App({ socket }) {
       </div>
       <div className='col container-fluid'>
         <div className='row graph box'>
-          <Graph />
+          <Graph canvasRef={canvasRef} candle={candle} />
         </div>
       </div>
     </div>

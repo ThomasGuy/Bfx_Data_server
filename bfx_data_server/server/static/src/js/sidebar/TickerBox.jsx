@@ -11,7 +11,7 @@ export default function TickerBox({ name, price, favCoins, setState }) {
   }
 
   return (
-    <div className='tickerbox' data-coin={name}>
+    <div className='tickerbox' data-coin={name} id={`ticker-${name}`}>
       <div className='p-1'>{name}</div>
       <div className='p-1'>{price}</div>
       <input type='checkbox' name={name} onChange={handleFavourite} id={`fav-${name}`} />

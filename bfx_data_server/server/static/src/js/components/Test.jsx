@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/prop-types */
-import React from "react";
+import React from 'react';
 
 class Test extends React.Component {
   constructor(props) {
@@ -8,25 +8,25 @@ class Test extends React.Component {
     this.socket = props.socket;
     this.state = {
       coindata: [],
-      symbol: "coin",
+      symbol: 'coin',
     };
   }
 
   componentDidMount() {
-    this.socket.on("connect", () => {
-      console.log("Socket Connected");
+    this.socket.on('connect', () => {
+      console.log('Socket Connected');
     });
-    this.socket.on("ticker event", data => {
-      if (data.symbol === "tBSVUSD") {
-        console.log("I got one!");
+    this.socket.on('ticker event', data => {
+      if (data.symbol === 'tBSVUSD') {
+        console.log('I got one!');
         this.setState({
           coindata: data.data,
           symbol: data.symbol,
         });
       }
     });
-    this.socket.on("disconnect", () => {
-      console.log("Disconnected server");
+    this.socket.on('disconnect', () => {
+      console.log('Disconnected server');
     });
   }
 

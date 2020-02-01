@@ -4,9 +4,10 @@ import React from 'react';
 
 import TickerBox from './TickerBox';
 
-export default function Tickers({ coins, favCoins, setState, setActive }) {
+export default function Tickers({ coins, favCoins, setState, setActive, active }) {
   function handleSelect() {
     const current = document.getElementsByClassName('active');
+    // const current = document.getElementById(`ticker-${active}`);
     current[0].className = current[0].className.replace(' active', '');
     this.className += ' active';
     setActive(this.dataset.coin);
@@ -15,13 +16,7 @@ export default function Tickers({ coins, favCoins, setState, setActive }) {
   const tickerList = Object.entries(coins).map(([key, value]) => {
     return (
       <div className='list-item' key={`tick-${key}`}>
-        <TickerBox
-          name={key}
-          price={value}
-          favCoins={favCoins}
-          setState={setState}
-          id={`ticker-${key}`}
-        />
+        <TickerBox name={key} price={value} favCoins={favCoins} setState={setState} />
       </div>
     );
   });

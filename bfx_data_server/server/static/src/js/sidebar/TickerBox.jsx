@@ -1,20 +1,24 @@
 import React from 'react';
 
-export default function TickerBox({ name, price, favCoins, setState }) {
+export default function TickerBox({ name, price, setFavourite }) {
   function handleFavourite(evt) {
-    const coin = evt.target.name;
+    const selectCoin = evt.target.name;
     if (evt.target.checked) {
-      setState([coin, ...favCoins]);
+      setFavourite(prev => [...prev, selectCoin]);
     } else {
-      setState(favCoins.filter(item => item !== coin));
+      setFavourite(prev => prev.filter(item => item !== selectCoin));
     }
   }
 
   return (
-    <div className='tickerbox' data-coin={name} id={`ticker-${name}`}>
-      <div className='p-1'>{name}</div>
-      <div className='p-1'>{price}</div>
-      <input type='checkbox' name={name} onChange={handleFavourite} id={`fav-${name}`} />
+    <div className='tickerbox' id={`ticker-${name}`}>
+      <div className='box-values' data-symbol={name}>
+        <div className='p-2'>{name}</div>
+        <div className='p-2'>{price}</div>
+      </div>
+      <div className='p-2'>
+        <input type='checkbox' name={name} onChange={handleFavourite} id={`fav-${name}`} />
+      </div>
     </div>
   );
 }

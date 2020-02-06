@@ -30,7 +30,7 @@ def create_app(Config):
 
     # initialize plugins
     from bfx_data_server.database import session_factory, User, Favourite
-    Session = flask_scoped_session(session_factory, app)
+    dbSession = flask_scoped_session(session_factory, app)
     login_manager.init_app(app)
     sesh.init_app(app)
     sockio.init_app(app, manage_session=False)
@@ -48,15 +48,15 @@ def create_app(Config):
         @login_manager.user_loader
         def load_user(user_id):
             if user_id is not None:
-                return Session.query(User).get(int(user_id))
+                return dbSession.query(User).get(int(user_id))
             return None
 
         @app.shell_context_processor
         def make_shell_context():
-            return {'Session': Session, 'User': User, 'Favourite': Favourite}
+            return {'db': dbSession, 'User': User, 'Favourite': Favourite}
 
         @app.teardown_appcontext
         def shutdown_session(exception=None):
-            Session.remove()
+            dbSession.remove()
 
     return app, sockio

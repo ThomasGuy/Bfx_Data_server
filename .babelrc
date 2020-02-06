@@ -1,11 +1,19 @@
 {
-  "presets":
-    ["@babel/preset-env",
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "12"
+        }
+      }
+    ],
     "@babel/preset-react"
-    ]
-  ,
+  ],
   "plugins": [
-    ["transform-imports", {
+    [
+      "transform-imports",
+      {
         "react-bootstrap": {
           "transform": "react-bootstrap/lib/${member}",
           "preventFullImport": true
@@ -14,7 +22,8 @@
           "transform": "lodash/${member}",
           "preventFullImport": true
         }
-    }],
+      }
+    ],
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-proposal-class-properties",
     "babel-plugin-styled-components"

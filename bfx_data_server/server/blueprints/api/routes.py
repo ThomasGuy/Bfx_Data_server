@@ -1,12 +1,20 @@
 """
     Flask route; api
 """
+import logging
+
+# 3rd party imports
 from flask import Blueprint, jsonify, request, session
 from flask_login import login_required
 import requests
 
+# package imports
+from .bfx import tickerDict
+from ...utils.tickerHolder import Ticker
 
-api_v1 = Blueprint('API_v1', __name__, template_folder='templates')
+
+log = logging.getLogger(__name__)
+api_v1 = Blueprint('API_v1', __name__)
 url = 'https://api-pub.bitfinex.com/v2/candles/trade:1h:tBTCUSD/hist?limit=50'
 
 
@@ -18,8 +26,12 @@ def userData():
     '''
     if request.method == 'GET':
         return jsonify(session['favCoins'])
-    elif request.method == 'POST':
-        pass
+
+    if request.method == 'POST':
+        log.info(f'response type - {type(request.get_json())}')
+        session['favCoins'] = request.get_json()
+        log.info(session['favCoins'])
+        return ''
 
 
 @api_v1.route('/api/v1/candles', methods=['GET', 'POST'])
@@ -39,3 +51,11 @@ def userCandles():
         el['close'] = item[2]
         output.append(el)
     return jsonify(output)
+
+
+@api_v1.route('/api/v1/tickers', methods=['GET', 'POST'])
+@login_required
+def intialTickers():
+    response = tickerDict.values()
+    # pylint: disable=no-member
+    return Ticker.schema().dumps(response, many=True)

@@ -8,7 +8,7 @@
     "prod": "cross-env NODE_ENV=production gulp",
     "clean": "rm -rf bfx_server/server/static/dist/** build/**",
     "reinstall": "npm run clean & rm -rf node_modules; npm install",
-    "pystart": "npm run clean; concurrently --kill-others \"npm run start\" \"python run.py\""
+    "dev": "npm run clean; concurrently --kill-others \"npm run start\" \"python wsgi.py\""
   },
   "author": "tom",
   "license": "ISC",
@@ -24,6 +24,7 @@
     "@material-ui/core": "^4.8.3",
     "@material-ui/icons": "^4.5.1",
     "@material/react-text-field": "^0.15.0",
+    "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "bootstrap-scss": "^4.4.1",
     "font-awesome": "^4.7.0",

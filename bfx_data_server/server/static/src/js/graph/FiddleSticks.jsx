@@ -22,5 +22,5 @@ export default function FiddleSticks({ canvasRef, candle }) {
 
   // candleSeries.setData(candle);
 
-  return <div ref={canvasRef} />;
+  return <div ref={canvasRef}>Fiddle Sticks</div>;
 }

@@ -15,8 +15,7 @@ export default function Sidebar({ coin, favCoins, setFavourite, active, setActiv
           coin={coin}
           favCoins={favCoins}
           setFavourite={setFavourite}
-          setActive={setActive}
-        />
+          setActive={setActive} />
       </div>
       <div className='row balance box'>
         <Balance />

@@ -9,7 +9,7 @@ import autoprefixer from 'autoprefixer';
 import del from 'del';
 import imagemin from 'gulp-imagemin';
 import cssnano from 'cssnano';
-import browserSync from 'browser-sync';
+// import browserSync from 'browser-sync';
 import cond from 'gulp-cond';
 import cleanCSS from 'gulp-clean-css';
 import babelify from 'babelify';
@@ -54,27 +54,25 @@ const path = {
   },
 };
 
-const clean = () => {
-  return del(['bfx_data_sever/server/static/dist/**/*', 'build/**/*']);
-};
+const clean = () => del(['bfx_data_sever/server/static/dist/**/*', 'build/**/*']);
 
-const server = browserSync.create();
+// const server = browserSync.create();
 
-const runServer = resolve => {
-  server.init({
-    proxy: {
-      target: 'localhost:5000',
-      ws: true,
-    },
-  });
+// const runServer = resolve => {
+//   server.init({
+//     proxy: {
+//       target: 'localhost:5000',
+//       ws: true,
+//     },
+//   });
 
-  resolve();
-};
+//   resolve();
+// };
 
-const reload = none => {
-  server.reload();
-  none();
-};
+// const reload = none => {
+//   server.reload();
+//   none();
+// };
 
 // Compile sass into CSS
 function sassTask() {
@@ -93,7 +91,7 @@ function moveJS() {
   return src(path.js.vendor_bs).pipe(dest(path.js.dest));
 }
 
-// JS task: concatenates and uglifies JS files to script.js
+// JS task: concatenates and uglifies JS files to main.js
 function jsTask() {
   return src(path.js.site, { sourcemaps: !PROD })
     .pipe(babel())
@@ -139,12 +137,10 @@ function mvFontAwesome() {
   return src([path.fonts.vendor.src, path.fonts.src]).pipe(dest(path.fonts.dest));
 }
 
-const watchall = () => {
-  return watch(
-    [path.scss.src, path.js.src],
-    series(parallel(sassTask, jsTask, buildReact), reload),
-  );
-};
+const watchall = () => watch(
+  [path.scss.src, path.js.src],
+  series(parallel(sassTask, jsTask, buildReact)), // removed 'reload' server 2nd series element
+);
 
 module.exports.default = series(
   clean,

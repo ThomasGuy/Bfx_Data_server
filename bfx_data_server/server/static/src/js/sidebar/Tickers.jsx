@@ -13,14 +13,11 @@ export default function Tickers({ coin, setFavourite, setActive }) {
     setActive(this.dataset.symbol);
   }
 
-  const tickerList = Object.keys(coin).map(key => {
-    // const { symbol, last_price } = key;
-    return (
-      <div className='list-item' key={`tick-${key}`}>
-        <TickerBox name={key} price={coin.key.last_price} setFavourite={setFavourite} />
-      </div>
-    );
-  });
+  const tickerList = Object.entries(coin).map(([key, value]) => (
+    <div className='list-item' key={`tick-${key}`}>
+      <TickerBox name={key} price={value[2]} daily={value[1]} setFavourite={setFavourite} />
+    </div>
+  ));
   const boxes = document.querySelectorAll('.box-values');
   boxes.forEach(box => box.addEventListener('click', handleSelect));
 

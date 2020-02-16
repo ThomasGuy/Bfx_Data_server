@@ -3,6 +3,7 @@
 '''
 import logging
 import os
+import json
 
 # 3rd party imports
 from bfxapi import Client
@@ -20,7 +21,8 @@ symbols = ['BTC', 'BCH', 'BSV', 'BTG', 'DSH', 'EOS', 'ETC', 'ETH', 'ETP', 'IOT',
 sym2 = ['BTC', 'ETH', 'XRP', 'LTC', 'NEO', 'BSV', 'EOS', 'ETC', 'XMR', 'TRX', 'ZEC']
 tickerDataFields = ['daily_change', 'daily_change_relative', 'last_price',
                     'volume', 'high', 'low']
-tickerDict = {}
+# tickerDict = {}
+tickerArrayDict = {}
 
 bfx = Client(
     # API_KEY=API_KEY,
@@ -40,8 +42,9 @@ def show_channel(sub):
     symbol = sub.symbol
     channel_name = sub.channel_name
     log.info(f"{symbol} subscribed - channel: {channel_name}")
-    if channel_name == 'ticker':
-        tickerDict[symbol] = Ticker(symbol=symbol[1:], channel_name=channel_name)
+    # if channel_name == 'ticker':
+        # tickerDict[symbol] = Ticker(symbol=symbol[1:], channel_name=channel_name)
+        # tickerArrayDict = [symbol[1:]]
 
 
 @bfx.ws.on('all')
@@ -53,15 +56,16 @@ def bfxws_data_handler(data):
         if type(dataEvent) is not str and bfx.ws.subscriptionManager.is_subscribed(chan_id):
             sub = bfx.ws.subscriptionManager.get(chan_id)
             if sub.channel_name == 'ticker':
-                updated = dict(zip(tickerDataFields, dataEvent[4:]))
-                tickerDict[sub.symbol].update(**updated)
-            # if sub.channel_name == 'ticker':
-            #     payload = {
-            #         'symbol': sub.symbol[1:4],
-            #         'data': dataEvent[4:],
-            #         }
-            #     sockio.emit('ticker event', json.dumps(payload), namespace='/main')
-                # log.debug(f'{sub.symbol} - ticker event')
+                # updated = dict(zip(tickerDataFields, dataEvent[4:]))
+                # tickerDict[sub.symbol].update(**updated)
+                tickerArrayDict[sub.symbol[1:]] = dataEvent[4:]
+
+                payload = {
+                    'symbol': sub.symbol[1:],
+                    'data': dataEvent[4:],
+                    }
+                sockio.emit('ticker event', json.dumps(payload), namespace='/main', broadcast=True)
+                log.debug(f'{sub.symbol} - ticker event')
     else:
         log.info(f'bfx-info: {data}')
 

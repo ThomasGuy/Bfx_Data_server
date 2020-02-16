@@ -9,8 +9,7 @@ from flask_login import login_required
 import requests
 
 # package imports
-from .bfx import tickerDict
-from ...utils.tickerHolder import Ticker
+from .bfx import tickerArrayDict
 
 
 log = logging.getLogger(__name__)
@@ -55,7 +54,8 @@ def userCandles():
 
 @api_v1.route('/api/v1/tickers', methods=['GET', 'POST'])
 @login_required
-def intialTickers():
-    response = tickerDict.values()
-    # pylint: disable=no-member
-    return Ticker.schema().dumps(response, many=True)
+def intiTickers():
+    '''
+        Send initial ticker data
+    '''
+    return jsonify(tickerArrayDict)

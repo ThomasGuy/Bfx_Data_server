@@ -1,20 +1,43 @@
+/* eslint-disable no-fallthrough */
 /* eslint-disable react/prop-types */
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useReducer } from 'react';
 import axios from 'axios';
-
+import io from 'socket.io-client';
 import Sidebar from './sidebar/Sidebar';
 import Graph from './graph/Graph';
-// import usePersistedState from './components/PersistedState';
-// import { asyncGetData, getData } from './Utils';
 
+
+const socket = io('http://localhost:5000/main');
 const updateCheckbox = favouriteCheckBoxes => {
-  if (favouriteCheckBoxes.length > 0) {
-    favouriteCheckBoxes.forEach(box => {
-      const el = document.getElementById(`fav-${box}`);
-      if (el) el.checked = true;
-    });
-  }
+  favouriteCheckBoxes.forEach(box => {
+    document.getElementById(`fav-${box}`).checked = true;
+  });
 };
+const colorDaily = (key, val) => {
+  const el = document.getElementById(`daily-${key}`)
+  if (val[1] < 0) {
+    (el.style.color = '#E95157');
+  } else {
+    (el.style.color = '#1A9451');
+  };
+}
+
+// function handleFavourite(evt) {
+//   const selectCoin = evt.target.name;
+//   if (evt.target.checked) {
+//     setFavourite(prev => [...prev, selectCoin]);
+//   } else {
+//     setFavourite(prev => prev.filter(item => item !== selectCoin));
+//   }
+// }
+
+// function favouriteReducer (state, action) {
+//   switch (action.type) {
+//   case 'TICKERBOX': handleFavourite()
+//   default:
+//     throw new Error()
+//   }
+// }
 
 const App = () => {
   const canvasRef = useRef(null);
@@ -24,57 +47,51 @@ const App = () => {
   const [coin, setCoin] = useState({});
 
   useEffect(() => {
-    const temp = {};
-    axios
-      .get('/api/v1/tickers')
+    const source = axios.CancelToken.source();
+    axios.all([
+      axios.get('/api/v1/tickers', { cancelToken: source.token }),
+      axios.get('/api/v1/favCoins', { cancelToken: source.token }),
+      axios.get('/api/v1/candles', { cancelToken: source.token }),
+    ])
       .then(
-        res => {
-          res.data.forEach(obj => (temp[obj.symbol] = obj));
-          console.log(Object.keys(temp));
+        responseArr => {
+          setCoin({ ...responseArr[0].data });
+          setFavourite([...responseArr[1].data]);
+          setCandle(responseArr[2].data)
+          Object.entries(responseArr[0].data).forEach(([key, val]) => {
+            colorDaily(key, val);
+          })
+          updateCheckbox(responseArr[1].data);
         },
         error => {
-          console.log(error);
-        },
-      )
-      .then(() =>
-        Object.keys(temp).map(key => setCoin(prev => ({ ...prev, [key]: { ...temp[key] } }))),
+          if (axios.isCancel(error)) {
+            // request cancelled
+          } else {
+            throw error;
+          }
+        }
       );
 
-    // .then(() => setCoin(prev => ({ ...prev, ...temp })));
-    // return () => {
-    //   console.log(favourite);
-    //   axios.post('/api/v1/favCoins', { data: favourite }).then(
-    //     (res => {
-    //       console.log(res.data);
-    //     },
-    //     error => {
-    //       console.log(error);
-    //     }),
-    //   );
-    // };
+    socket.on('ticker event', payload => {
+      const { symbol, data } = JSON.parse(payload);
+      setCoin(prev => ({ ...prev, [symbol]: data }));
+      colorDaily(symbol, data);
+    });
   }, []);
-
-  useEffect(() => {
-    axios.get('/api/v1/favCoins').then(
-      res => {
-        if (res.data[0]) {
-          setFavourite([...res.data]);
-          updateCheckbox(res);
-        }
-      },
-      error => console.log(error),
-    );
-  }, []);
-
-  useEffect(() => {
-    fetch('/api/v1/candles')
-      .then(res => res.json())
-      .then(res => setCandle(res))
-      .catch(() => console.log('Error'));
-  }, [canvasRef]);
 
   useEffect(() => {
     updateCheckbox(favourite);
+    return () => {
+      console.log(favourite);
+      axios.post('/api/v1/favCoins', { data: favourite }).then(
+        (res => {
+          console.log('Post: ', res.data);
+        },
+        error => {
+          console.log(error);
+        }),
+      );
+    };
   }, [favourite]);
 
   return (
@@ -98,3 +115,5 @@ const App = () => {
 };
 
 export default App;
+
+// .then(() => setCoin(prev => ({ ...prev, ...temp })));

@@ -6,3 +6,8 @@ $darkrn-bg-lite: darken(rgb(233, 232, 215), 15%);
 $very-dark-blue: rgb(6, 3, 39);
 
 $fixed-top-offset: 76px;
+
+$ticker-box: rgb(32, 14, 12);
+$ticker-box-active: lighten($ticker-box, 5%);
+$ticker-text-color: rgb(199, 203, 204);
+$ticker-text-color2: rgb(187, 206, 221);

@@ -29,7 +29,7 @@ npm start.
 
 #### To install static files
 
-flask run
+python wsgi.py
 
 to develope:
 

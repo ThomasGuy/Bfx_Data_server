@@ -1,50 +1,22 @@
-/* eslint-disable no-fallthrough */
-/* eslint-disable react/prop-types */
 import React, { useRef, useState, useEffect, useReducer } from 'react';
 import axios from 'axios';
 import io from 'socket.io-client';
 import Sidebar from './sidebar/Sidebar';
 import Graph from './graph/Graph';
+import appReducer from './components/reducers';
 
 
 const socket = io('http://localhost:5000/main');
-const updateCheckbox = favouriteCheckBoxes => {
-  favouriteCheckBoxes.forEach(box => {
-    document.getElementById(`fav-${box}`).checked = true;
-  });
-};
-const colorDaily = (key, val) => {
-  const el = document.getElementById(`daily-${key}`)
-  if (val[1] < 0) {
-    (el.style.color = '#E95157');
-  } else {
-    (el.style.color = '#1A9451');
-  };
-}
-
-// function handleFavourite(evt) {
-//   const selectCoin = evt.target.name;
-//   if (evt.target.checked) {
-//     setFavourite(prev => [...prev, selectCoin]);
-//   } else {
-//     setFavourite(prev => prev.filter(item => item !== selectCoin));
-//   }
-// }
-
-// function favouriteReducer (state, action) {
-//   switch (action.type) {
-//   case 'TICKERBOX': handleFavourite()
-//   default:
-//     throw new Error()
-//   }
-// }
 
 const App = () => {
-  const canvasRef = useRef(null);
-  const [favourite, setFavourite] = useState([]);
-  const [active, setActive] = useState('BTCUSD');
+  const [ state, dispatch ] = useReducer(appReducer, {
+    favourite: [],
+    active: 'BTCUSD',
+    coins: {},
+  });
+  const { favourite, active, coins } = state;
   const [candle, setCandle] = useState([]);
-  const [coin, setCoin] = useState({});
+  const canvasRef = useRef(null);
 
   useEffect(() => {
     const source = axios.CancelToken.source();
@@ -55,13 +27,10 @@ const App = () => {
     ])
       .then(
         responseArr => {
-          setCoin({ ...responseArr[0].data });
-          setFavourite([...responseArr[1].data]);
+          dispatch({ type: 'INIT', response: { ...responseArr[0].data } });
+          dispatch({ type: 'ADD_FAVOURITE', item: [...responseArr[1].data] });
           setCandle(responseArr[2].data)
-          Object.entries(responseArr[0].data).forEach(([key, val]) => {
-            colorDaily(key, val);
-          })
-          updateCheckbox(responseArr[1].data);
+
         },
         error => {
           if (axios.isCancel(error)) {
@@ -73,15 +42,13 @@ const App = () => {
       );
 
     socket.on('ticker event', payload => {
-      const { symbol, data } = JSON.parse(payload);
-      setCoin(prev => ({ ...prev, [symbol]: data }));
-      colorDaily(symbol, data);
+      dispatch({ type: 'UPDATE', response: JSON.parse(payload) });
     });
   }, []);
 
-  useEffect(() => {
-    updateCheckbox(favourite);
-    return () => {
+  useEffect(() =>
+    // updateCheckbox(favourite);
+    () => {
       console.log(favourite);
       axios.post('/api/v1/favCoins', { data: favourite }).then(
         (res => {
@@ -91,18 +58,16 @@ const App = () => {
           console.log(error);
         }),
       );
-    };
-  }, [favourite]);
+    }
+  , [favourite]);
 
   return (
     <div className='row'>
       <div className='sidebar container-fluid'>
         <Sidebar
-          coin={coin}
-          favCoins={favourite}
-          setFavourite={setFavourite}
+          coins={coins}
           active={active}
-          setActive={setActive}
+          dispatch={dispatch}
         />
       </div>
       <div className='col container-fluid'>
@@ -115,5 +80,3 @@ const App = () => {
 };
 
 export default App;
-
-// .then(() => setCoin(prev => ({ ...prev, ...temp })));

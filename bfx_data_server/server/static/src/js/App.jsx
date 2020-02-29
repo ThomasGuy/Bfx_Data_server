@@ -13,41 +13,45 @@ const App = () => {
     active: 'BTCUSD',
     coins: {},
   });
-  const { favourite, active, coins } = state;
+  const { active, coins } = state;
   const [candle, setCandle] = useState([]);
   const candleRef = useRef(null);
 
   useEffect(() => {
     const source = axios.CancelToken.source();
-    axios
-      .all([
-        axios.get('/api/v1/tickers', { cancelToken: source.token }),
-        axios.get('/api/v1/favCoins', { cancelToken: source.token }),
-        axios.get('/api/v1/candles', { cancelToken: source.token }),
-      ])
-      .then(
-        responseArr => {
-          dispatch({ type: 'INIT', response: { ...responseArr[0].data } });
-          dispatch({ type: 'ADD_FAVOURITE', item: [...responseArr[1].data] });
-          setCandle(responseArr[2].data);
 
-          Object.entries(responseArr[0].data).forEach(([key, val]) => {
-            colorDaily(key, val);
-          });
-          updateCheckbox(responseArr[1].data);
-        },
-        error => {
-          if (axios.isCancel(error)) {
-            // request cancelled
-          } else {
-            throw error;
-          }
-        },
-      );
+    const getem = async () => {
+      axios
+        .all([
+          await axios.get('/api/v1/tickers', { cancelToken: source.token }),
+          await axios.get('/api/v1/favCoins', { cancelToken: source.token }),
+          await axios.get('/api/v1/candles', { cancelToken: source.token }),
+        ])
+        .then(
+          responseArr => {
+            dispatch({ type: 'INIT', response: { ...responseArr[0].data } });
+            dispatch({ type: 'ADD_FAVOURITE', item: [...responseArr[1].data] });
+            setCandle(responseArr[2].data);
 
-    socket.on('ticker event', payload => {
-      dispatch({ type: 'UPDATE', response: JSON.parse(payload) });
-    });
+            Object.entries(responseArr[0].data).forEach(([key, val]) => {
+              colorDaily(key, val);
+            });
+            updateCheckbox(responseArr[1].data);
+          },
+          error => {
+            if (axios.isCancel(error)) {
+              // request cancelled
+            } else {
+              throw error;
+            }
+          },
+        );
+
+      socket.on('ticker event', payload => {
+        dispatch({ type: 'UPDATE', response: JSON.parse(payload) });
+      });
+    };
+    getem();
   }, []);
 
   // useEffect(() =>

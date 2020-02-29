@@ -2,7 +2,7 @@ import React from 'react';
 
 // import { createChart } from 'lightweight-charts';
 
-export default function FiddleSticks({ canvasRef, candle }) {
+export default function FiddleSticks({ candleRef, candle }) {
   // const myChart = createChart(canvasRef, {
   //   width: 600,
   //   height: 300,
@@ -22,5 +22,5 @@ export default function FiddleSticks({ canvasRef, candle }) {
 
   // candleSeries.setData(candle);
 
-  return <div ref={canvasRef}>Fiddle Sticks</div>;
+  return <div ref={candleRef}>Fiddle Sticks</div>;
 }

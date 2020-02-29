@@ -1,7 +1,7 @@
 body {
   padding-top: $fixed-top-offset;
-  font-family: "Lato", cursive;
-  background-color: rgb(92, 42, 20);
+  font-family: 'Lato', cursive;
+  background-color: $bg-body;
 }
 h1,
 h2,
@@ -11,9 +11,8 @@ h5,
 h6,
 .nav,
 .navbar {
-  font-family: "Roboto", cursive;
+  font-family: 'Roboto', cursive;
 }
-
 
 .mysite-section {
   min-height: 500px;

@@ -9,7 +9,7 @@ import json
 from bfxapi import Client
 
 # package imports
-from bfx_data_server.server.utils.tickerHolder import Ticker
+# from bfx_data_server.server.utils.tickerHolder import Ticker
 from ..myEvents.events import sockio
 
 
@@ -42,9 +42,6 @@ def show_channel(sub):
     symbol = sub.symbol
     channel_name = sub.channel_name
     log.info(f"{symbol} subscribed - channel: {channel_name}")
-    # if channel_name == 'ticker':
-        # tickerDict[symbol] = Ticker(symbol=symbol[1:], channel_name=channel_name)
-        # tickerArrayDict = [symbol[1:]]
 
 
 @bfx.ws.on('all')
@@ -56,8 +53,8 @@ def bfxws_data_handler(data):
         if type(dataEvent) is not str and bfx.ws.subscriptionManager.is_subscribed(chan_id):
             sub = bfx.ws.subscriptionManager.get(chan_id)
             if sub.channel_name == 'ticker':
-                # updated = dict(zip(tickerDataFields, dataEvent[4:]))
-                # tickerDict[sub.symbol].update(**updated)
+                # updates = dict(zip(tickerDataFields, dataEvent[4:]))
+                # tickerDict[sub.symbol].update(**updates)
                 tickerArrayDict[sub.symbol[1:]] = dataEvent[4:]
 
                 payload = {
@@ -71,7 +68,7 @@ def bfxws_data_handler(data):
 
 async def start():
     await bfx.ws.subscribe('ticker', 'tBTCUSD')
-    for sym in sym2[1:]:
+    for sym in symbols[1:]:
         # btc = f't{sym}BTC'
         usd = f't{sym}USD'
         await bfx.ws.subscribe('ticker', usd)

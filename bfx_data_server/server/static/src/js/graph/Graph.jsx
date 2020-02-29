@@ -2,11 +2,11 @@ import React from 'react';
 
 import FiddleSticks from './FiddleSticks';
 
-export default function Graph({ canvasRef, candle }) {
+export default function Graph({ candleRef, candle }) {
   return (
     <div className='container-fluid'>
       <div className='row graph-stats'>Graph Stats</div>
-      <FiddleSticks canvasRef={canvasRef} candle={candle} />
+      <FiddleSticks candleRef={candleRef} candle={candle} />
     </div>
   );
 }

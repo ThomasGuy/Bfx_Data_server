@@ -1,11 +1,10 @@
 #coins {
-  // background-color: rgb(92, 42, 20);
   background-color: $bg-dark;
 }
 
 .box {
-  background-color: rgba(48, 22, 16, 0.76);
-  margin: 5px 0;
+  background-color: rgba(48, 22, 16, 0.753);
+  margin: 5px;
 }
 .sidebar {
   color: rgb(188, 206, 221);
@@ -42,8 +41,6 @@
   flex: auto;
 }
 .info-item {
-  // justify-content: flex-end;
-  // align-items: flex-end;
   padding: 0 10px;
   font-size: 0.9rem;
   font-family: 'Roboto Slab', serif;

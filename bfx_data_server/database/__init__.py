@@ -14,7 +14,7 @@ from .models import Base, User, Favourite
 
 
 log = logging.getLogger(__name__)
-dbPath = "sqlite:////c/data/sqlite/db/bfx_testDB.db"
+dbPath = "sqlite:////mnt/c/data/sqlite/db/bfx_testDB.db"
 # dbPath = os.getenv('DATABASE_URI')
 
 engine = create_engine(dbPath)

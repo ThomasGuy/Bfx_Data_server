@@ -10,3 +10,4 @@ app, sockio = create_app('config.DevConfig')
 if __name__ == "__main__":
     bfx.ws.run()
     sockio.run(app)
+
